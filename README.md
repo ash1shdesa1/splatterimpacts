@@ -149,3 +149,31 @@ Categories: `splatter-targets` · `paper-targets` · `steel-targets` · `reactiv
 | `NEXT_PUBLIC_SITE_URL` | Used for Stripe success/cancel redirects and absolute image URLs |
 | `RESEND_API_KEY` | Email sending (not yet wired up) |
 | `EMAIL_FROM` / `EMAIL_TO` | Email addresses for order/contact notifications |
+| `SHOPIFY_STORE_DOMAIN` | `your-store.myshopify.com` — enables Shopify checkout |
+| `SHOPIFY_STOREFRONT_ACCESS_TOKEN` | Storefront API token (checkout creation) |
+| `SHOPIFY_API_VERSION` | Storefront API version (default `2025-01`) |
+| `SHOPIFY_ADMIN_ACCESS_TOKEN` | Admin API token (optional — product/order sync) |
+| `SHOPIFY_WEBHOOK_SECRET` | Verifies `/api/shopify/webhooks` signatures |
+
+---
+
+## Shopify Checkout (optional)
+
+Checkout is provider-agnostic: when the Shopify env vars are set, `/api/checkout`
+creates a Shopify cart and returns its hosted `checkoutUrl`; otherwise it falls
+back to Stripe Checkout. Nothing breaks before Shopify is configured.
+
+To enable Shopify:
+
+1. In Shopify admin → **Settings → Apps and sales channels → Develop apps**, create
+   an app and grant **Storefront API** access (scope `unauthenticated_write_checkouts`).
+   Install it and copy the **Storefront API access token**.
+2. Fill in the `SHOPIFY_*` placeholders in `.env.local` (see `.env.example`).
+3. Map each product to its Shopify variant: set `shopifyVariantId` on the entries in
+   `src/data/products.ts` to the variant GID (`gid://shopify/ProductVariant/...`).
+   The checkout route returns a clear error for any product still missing this.
+4. (Optional) Add a webhook in Shopify pointing at `/api/shopify/webhooks` and set
+   `SHOPIFY_WEBHOOK_SECRET` to its signing secret.
+
+Integration code lives in `src/lib/shopify.ts`; the checkout branch is in
+`src/app/api/checkout/route.ts`.

@@ -9,6 +9,23 @@ Key architectural and product decisions, in reverse-chronological order.
 
 ---
 
+## 2026-06-28 — Provider-agnostic checkout with Shopify integration
+
+**Decision:** Added a Shopify Storefront API integration (`src/lib/shopify.ts`)
+and routed `/api/checkout` through it when configured, falling back to Stripe
+otherwise. A `shopifyVariantId` field on `Product` maps catalog items to Shopify
+variants; an HMAC-verified webhook receiver lives at `/api/shopify/webhooks`.
+
+**Why:** Move order/payment handling onto Shopify without breaking the existing
+storefront. Gating on env config means the app builds and runs unchanged until
+the Shopify placeholders (`SHOPIFY_*` in `.env.example`) are filled in.
+
+**To complete configuration:** set the `SHOPIFY_*` env vars, populate each
+product's `shopifyVariantId`, and (optionally) register the webhook. Until then,
+checkout continues to use Stripe.
+
+---
+
 ## 2026-06-28 — Tactical rebrand: blaze-orange palette + original SVG product art
 
 **Decision:** Replaced the luxury gold/cream palette with a tactical scheme —

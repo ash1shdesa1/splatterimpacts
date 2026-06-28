@@ -18,6 +18,9 @@ export interface Product {
   images: string[]
   badge?: string
   inStock: boolean
+  // Shopify Storefront variant GID (e.g. "gid://shopify/ProductVariant/123").
+  // Required only when checkout is routed through Shopify; leave empty otherwise.
+  shopifyVariantId?: string
 }
 
 export interface CartItem {
