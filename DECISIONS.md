@@ -1,4 +1,4 @@
-# VERO — Decision Log
+# Splatter Impacts — Decision Log
 
 Key architectural and product decisions, in reverse-chronological order.
 
@@ -32,7 +32,7 @@ Key architectural and product decisions, in reverse-chronological order.
 
 ## 2026-06-20 — Bare domain redirects to www
 
-**Decision:** `the-vero.com` permanently redirects (301) to `www.the-vero.com` via Netlify redirect rule.
+**Decision:** `splatterimpacts.com` permanently redirects (301) to `www.splatterimpacts.com` via Netlify redirect rule.
 
 **Why:** Canonical URL consistency for SEO and branding. HSTS preload also works better with a single canonical origin.
 
@@ -42,7 +42,7 @@ Key architectural and product decisions, in reverse-chronological order.
 
 **Decision:** Replaced all 35 product images with verified Stuller CDN URLs (`meteor.stullercloud.com/das/[ID]?fmt=png&wid=900`). Removed Unsplash from `remotePatterns` and `img-src` for product images.
 
-**Why:** Unsplash images are stock photography not of actual VERO products. Stuller CDN provides real jewelry product photography. All IDs were individually verified (HTTP 200) before commit.
+**Why:** Unsplash images are stock photography not of actual Splatter Impacts products. Stuller CDN provides real jewelry product photography. All IDs were individually verified (HTTP 200) before commit.
 
 **Approach:** Introduced a `CDN(id)` helper in `products.ts` to keep URL construction DRY.
 
@@ -88,7 +88,7 @@ Key architectural and product decisions, in reverse-chronological order.
 
 **Decision:** Use Stuller's public CDN for all product photography instead of original product photos or stock photography.
 
-**Why:** Real jewelry product photography is expensive to produce. Stuller is a major jewelry supplier whose CDN hosts high-quality professional product shots matching the types of pieces VERO sells. Images are used for design/presentation purposes.
+**Why:** Real jewelry product photography is expensive to produce. Stuller is a major jewelry supplier whose CDN hosts high-quality professional product shots matching the types of pieces Splatter Impacts sells. Images are used for design/presentation purposes.
 
 ---
 

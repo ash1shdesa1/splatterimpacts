@@ -1,6 +1,6 @@
-# VERO — Fine Jewelry E-Commerce
+# Splatter Impacts — Fine Jewelry E-Commerce
 
-Luxury jewelry storefront for **the-vero.com**. Built with Next.js 16 + React 19, Stripe Checkout, Zustand cart, and Tailwind CSS. Deployed on Netlify.
+Luxury jewelry storefront for **splatterimpacts.com**. Built with Next.js 16 + React 19, Stripe Checkout, Zustand cart, and Tailwind CSS. Deployed on Netlify.
 
 ---
 
@@ -103,22 +103,22 @@ src/
 
 Config in `netlify.toml` is ready. Steps to go live:
 
-1. Push to `github.com/ash1shdesa1/the-vero`
+1. Push to `github.com/ash1shdesa1/splatterimpacts`
 2. Connect repo in Netlify → New site from Git
 3. Add env vars in Netlify dashboard (Site Settings → Environment Variables):
    ```
    STRIPE_SECRET_KEY=sk_live_...
    NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_live_...
    STRIPE_WEBHOOK_SECRET=whsec_...
-   NEXT_PUBLIC_SITE_URL=https://www.the-vero.com
+   NEXT_PUBLIC_SITE_URL=https://www.splatterimpacts.com
    ```
-4. Connect domain `the-vero.com` in Netlify → Domain Management
-5. Add DNS records in Squarespace (account.squarespace.com/domains/managed/the-vero.com/dns/dns-settings):
+4. Connect domain `splatterimpacts.com` in Netlify → Domain Management
+5. Add DNS records in Squarespace (account.squarespace.com/domains/managed/splatterimpacts.com/dns/dns-settings):
    ```
    A     @    75.2.60.5
    CNAME www  [your-site].netlify.app
    ```
-6. Create Stripe webhook → `https://www.the-vero.com/api/webhooks`, event: `checkout.session.completed`
+6. Create Stripe webhook → `https://www.splatterimpacts.com/api/webhooks`, event: `checkout.session.completed`
 7. Uncomment (already done) bare-domain → www redirect in `netlify.toml`
 
 ---
