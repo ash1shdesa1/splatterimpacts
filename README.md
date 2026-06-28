@@ -1,6 +1,6 @@
-# Splatter Impacts — Fine Jewelry E-Commerce
+# Splatter Impacts — Reactive Shooting Targets E-Commerce
 
-Luxury jewelry storefront for **splatterimpacts.com**. Built with Next.js 16 + React 19, Stripe Checkout, Zustand cart, and Tailwind CSS. Deployed on Netlify.
+Storefront for **splatterimpacts.com** — reactive splatter targets, AR500 steel, reactive steel, stands, and range accessories. Built with Next.js 16 + React 19, Stripe Checkout, Zustand cart, and Tailwind CSS. Deployed on Netlify.
 
 ---
 
@@ -26,12 +26,12 @@ NEXT_PUBLIC_SITE_URL=http://localhost:3000
 | Layer | Tech |
 |-------|------|
 | Framework | Next.js 16, React 19 (App Router) |
-| Styling | Tailwind CSS, Cormorant Garamond + Inter fonts |
-| Cart state | Zustand + `persist` (localStorage) |
+| Styling | Tailwind CSS v4, Cormorant Garamond + Inter fonts; blaze-orange tactical accent |
+| Cart state | Zustand + `persist` (localStorage, key `splatterimpacts-cart`) |
 | Payments | Stripe Checkout (hosted, server-side session creation) |
-| Images | Stuller CDN (`meteor.stullercloud.com`) for products; Unsplash for editorial (About page) |
+| Images | First-party SVG target artwork in `public/images/products` (served via the Next image optimizer) |
 | Deployment | Netlify + `@netlify/plugin-nextjs` |
-| Security | CSP headers, bcrypt-style rate limiting, server-side price validation |
+| Security | CSP headers, server-side price validation |
 
 ---
 
@@ -48,8 +48,9 @@ src/
     checkout/page.tsx     # Order review page
     success/page.tsx      # Post-payment confirmation
     contact/              # Contact form
-    journal/              # Editorial/blog placeholder
-    sizing/               # Ring sizing guide
+    journal/              # Range guides / blog
+    sizing/               # Target sizing & distance guide
+    care/                 # Range & care guide
     shipping-returns/     # Policy page
     stockists/            # Retailer locator placeholder
     api/
@@ -64,13 +65,15 @@ src/
     ProductCard.tsx       # Card used in shop listing
     Footer.tsx
   data/
-    products.ts           # Full product catalog (35 SKUs, all Stuller CDN images)
+    products.ts           # Product catalog + CATEGORIES (local SVG product art)
   lib/
-    stripe.ts             # Stripe client (API version 2026-05-27.dahlia)
+    stripe.ts             # Stripe client
     types.ts              # Shared TypeScript types
   store/
     cart.ts               # Zustand cart store
   middleware.ts
+public/
+  images/products/        # Original in-house SVG target graphics
 ```
 
 ---
@@ -78,24 +81,23 @@ src/
 ## Pages & Features
 
 ### Working
-- **Homepage** — hero, featured products, brand callouts
-- **Shop** — filterable grid by category (rings, necklaces, earrings, bracelets, nose-rings, fine-jewelry, everyday-wear, custom-orders)
-- **Product detail** — images, description, details list, Add to Cart
+- **Homepage** — bold dark hero, marquee, "why splatter" section, category tiles, best sellers, bulk CTA, value props
+- **Shop** — filterable grid by category (splatter-targets, paper-targets, steel-targets, reactive-targets, target-stands, accessories), sort
+- **Product detail** — artwork, description, spec list, Add to Cart
 - **Cart drawer** — slide-in, quantity controls, remove, Escape key, body scroll lock, persists across page loads
 - **Checkout review** — order summary + totals before handing off to Stripe
 - **Stripe Checkout** — hosted by Stripe, collects shipping address + card, supports promo codes
 - **Success page** — post-payment confirmation screen
-- **About** — brand story, three editorial images (Unsplash)
-- **Contact** — form with API route
-- **Shipping & Returns, Sizing, Journal, Stockists** — static pages
+- **About** — targets brand story
+- **Contact** — form with API route (general, order, bulk/club, dealer, press)
+- **Care, Sizing, Shipping & Returns, Journal, Stockists** — content pages
 
 ### Known Issues / TODOs
-- **Cart doesn't clear after payment** — webhook handler (`api/webhooks/route.ts`) is a stub. After a successful Stripe payment, the cart still shows the purchased items. Need to either: (a) read the Stripe session on the success page and call `clearCart()`, or (b) implement the webhook to trigger cart clear via some mechanism.
-- **Redundant checkout step** — `/checkout` re-shows what's already in the cart drawer before redirecting to Stripe. Could be cut entirely (Cart Drawer → Stripe directly) or replaced with a real pre-checkout form.
-- **Shipping calc mismatch** — `/checkout` page shows "Complimentary" for carts over $200, but the Stripe session always presents both free + $25 express as options regardless of total.
-- **Broken `total`/`count` getters in cart store** — `store/cart.ts` defines `total` and `count` as JS getters but Zustand's `persist` middleware strips them on hydration. All components work around this by recalculating inline. The getters in the store are dead code.
-- **No size/variant selection** — no ring size or bracelet length picker anywhere in the add-to-cart flow.
+- **Cart doesn't clear after payment** — webhook handler (`api/webhooks/route.ts`) is a stub. After a successful payment the cart still shows the purchased items. Either read the Stripe session on the success page and call `clearCart()`, or implement the webhook to trigger it.
+- **Redundant checkout step** — `/checkout` re-shows what's already in the cart drawer before redirecting to Stripe. Could be cut (Cart Drawer → Stripe directly) or replaced with a real pre-checkout form.
+- **Broken `total`/`count` getters in cart store** — `store/cart.ts` defines `total` and `count` as JS getters but Zustand's `persist` middleware strips them on hydration. Components recalculate inline; the getters are dead code.
 - **Webhook fulfillment is a stub** — `checkout.session.completed` logs the session ID but does nothing else (no email, no inventory update, no order record).
+- **Product art is placeholder SVG** — `public/images/products/*.svg` is original in-house artwork. Swap in real product photography by replacing those files (keep the same paths).
 
 ---
 
@@ -113,21 +115,20 @@ Config in `netlify.toml` is ready. Steps to go live:
    NEXT_PUBLIC_SITE_URL=https://www.splatterimpacts.com
    ```
 4. Connect domain `splatterimpacts.com` in Netlify → Domain Management
-5. Add DNS records in Squarespace (account.squarespace.com/domains/managed/splatterimpacts.com/dns/dns-settings):
+5. Add DNS records at your registrar:
    ```
    A     @    75.2.60.5
    CNAME www  [your-site].netlify.app
    ```
 6. Create Stripe webhook → `https://www.splatterimpacts.com/api/webhooks`, event: `checkout.session.completed`
-7. Uncomment (already done) bare-domain → www redirect in `netlify.toml`
 
 ---
 
 ## Product Catalog
 
-35 SKUs across 6 categories. All product images use verified Stuller CDN IDs (`meteor.stullercloud.com/das/[ID]?fmt=png&wid=900`). Prices range from $549 to $5,999. All marked `inStock: true`. Server-side price validation in the checkout API prevents client-side price manipulation.
+26 SKUs across 6 categories, defined in `src/data/products.ts`. Every product uses first-party SVG artwork from `public/images/products`. Server-side price validation in the checkout API prevents client-side price manipulation.
 
-Categories: `rings` · `necklaces` · `earrings` · `bracelets` · `nose-rings` · `fine-jewelry` · `everyday-wear` · `custom-orders`
+Categories: `splatter-targets` · `paper-targets` · `steel-targets` · `reactive-targets` · `target-stands` · `accessories`
 
 ---
 
@@ -138,6 +139,6 @@ Categories: `rings` · `necklaces` · `earrings` · `bracelets` · `nose-rings` 
 | `STRIPE_SECRET_KEY` | Stripe server-side key (create session, validate webhooks) |
 | `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` | Stripe client-side key |
 | `STRIPE_WEBHOOK_SECRET` | Validates incoming Stripe webhook signatures |
-| `NEXT_PUBLIC_SITE_URL` | Used for Stripe success/cancel redirect URLs |
+| `NEXT_PUBLIC_SITE_URL` | Used for Stripe success/cancel redirects and absolute image URLs |
 | `RESEND_API_KEY` | Email sending (not yet wired up) |
 | `EMAIL_FROM` / `EMAIL_TO` | Email addresses for order/contact notifications |

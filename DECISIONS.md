@@ -2,6 +2,55 @@
 
 Key architectural and product decisions, in reverse-chronological order.
 
+> **Note:** Splatter Impacts is a reactive shooting-targets store. It was seeded
+> from an existing jewelry e-commerce template (`the-vero`) and then pivoted.
+> Entries dated **2026-06-20 and earlier** describe that original jewelry build
+> and are kept for history; they no longer reflect the live product.
+
+---
+
+## 2026-06-28 — Tactical rebrand: blaze-orange palette + original SVG product art
+
+**Decision:** Replaced the luxury gold/cream palette with a tactical scheme —
+blaze orange (`#FF6A00`) accent, cool industrial neutrals, hard black — in the
+`@theme` design tokens and across all hardcoded component hex. Product imagery is
+original in-house SVG target artwork in `public/images/products`, served through
+the Next image optimizer (`dangerouslyAllowSVG`).
+
+**Why:** A gold/serif "wedding" look did not fit a shooting-targets brand. Blaze
+orange is the range/safety color and reads tactical. Original SVG art avoids any
+third-party image rights issues and renders immediately; real photography can drop
+in later at the same paths.
+
+**Note:** Headings still use the Cormorant serif — a future pass could move to a
+condensed/industrial typeface to complete the tactical look.
+
+---
+
+## 2026-06-28 — Pivoted product domain from jewelry to shooting targets
+
+**Decision:** Replaced the jewelry catalog and all copy with a shooting-targets
+product line. New categories: `splatter-targets`, `paper-targets`, `steel-targets`,
+`reactive-targets`, `target-stands`, `accessories`. 26 original products with
+real-world specs (sizes, AR500 ratings, distances). All site copy (home, about,
+care, sizing, FAQ, journal, contact, legal) rewritten for targets.
+
+**Why:** The brand "Splatter Impacts" is a reactive-targets store; the jewelry
+template was only a starting scaffold.
+
+**Implementation:** `ProductCategory` union updated in `src/lib/types.ts`; catalog
+and a `CATEGORIES` export in `src/data/products.ts` drive the shop filter, nav, and
+footer. Checkout now resolves local image paths to absolute URLs for Stripe, and
+the free-shipping threshold dropped to $99.
+
+---
+
+## 2026-06-21 — Rebranded from VERO to Splatter Impacts
+
+**Decision:** Renamed the brand throughout — UI/metadata, domain
+(`splatterimpacts.com`), localStorage cart key (`splatterimpacts-cart`), and CSS
+design tokens — and wired the repo to `github.com/ash1shdesa1/splatterimpacts`.
+
 ---
 
 ## 2026-06-20 — All product images migrated from Stuller to curated Unsplash

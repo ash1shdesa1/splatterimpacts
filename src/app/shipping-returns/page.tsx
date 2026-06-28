@@ -35,14 +35,14 @@ export default function ShippingReturnsPage() {
               { q: 'Free Return Shipping', a: 'Returns are complimentary. A prepaid return label will be emailed to you upon initiating your return.' },
               { q: 'How to Initiate a Return', a: 'Email contact@splatterimpacts.com with your order number and reason for return. We will respond within 1 business day.' },
               { q: 'Refunds', a: 'Refunds are processed within 5–7 business days of receiving your return. Credit will be applied to your original payment method.' },
-              { q: 'Final Sale Items', a: 'Custom orders and personalized pieces are final sale and are not eligible for return.' },
+              { q: 'Final Sale Items', a: 'For safety reasons, steel that has been shot is final sale and cannot be returned unless it arrived defective.' },
             ],
           },
           {
             title: 'Exchanges',
             content: [
-              { q: 'Ring Sizing', a: 'If your ring does not fit, we offer one complimentary size exchange within 30 days of delivery.' },
-              { q: 'Damaged or Defective Items', a: 'In the rare event that a piece arrives damaged, please email us within 48 hours with photos. We will replace or repair it at no cost.' },
+              { q: 'Wrong Item or Size', a: 'Ordered the wrong target or size? We offer one free exchange on unused items within 30 days of delivery.' },
+              { q: 'Damaged or Defective Items', a: 'Steel ships heavy and occasionally takes a knock in transit. If a target arrives damaged, email us within 7 days with photos and we will replace it at no cost.' },
             ],
           },
         ].map((section) => (
