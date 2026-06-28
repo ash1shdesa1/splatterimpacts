@@ -63,8 +63,8 @@ export default function JournalPage() {
   return (
     <div className="pt-[72px]">
       {/* Header */}
-      <div className="py-20 text-center px-6 border-b border-[#E8E5E0]">
-        <p className="text-[10px] tracking-[0.35em] uppercase text-[#C8A96E] mb-3">Stories & Inspiration</p>
+      <div className="py-20 text-center px-6 border-b border-[#D4D9DE]">
+        <p className="text-[10px] tracking-[0.35em] uppercase text-[#FF6A00] mb-3">Stories & Inspiration</p>
         <h1 className="font-[var(--font-cormorant)] text-5xl font-light tracking-widest uppercase">Journal</h1>
         <span className="gold-line mt-5 mx-auto block" />
       </div>
@@ -84,14 +84,14 @@ export default function JournalPage() {
           </div>
           <div className="flex flex-col justify-center">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-[9px] tracking-[0.25em] uppercase text-[#C8A96E]">{featured.category}</span>
-              <span className="w-4 h-px bg-[#E8E5E0]" />
-              <span className="text-[11px] text-[#9B9892]">{featured.date}</span>
+              <span className="text-[9px] tracking-[0.25em] uppercase text-[#FF6A00]">{featured.category}</span>
+              <span className="w-4 h-px bg-[#D4D9DE]" />
+              <span className="text-[11px] text-[#8A9099]">{featured.date}</span>
             </div>
             <h2 className="font-[var(--font-cormorant)] text-3xl md:text-4xl font-light leading-tight tracking-wide mb-4">
               {featured.title}
             </h2>
-            <p className="text-[14px] text-[#5C5A56] leading-relaxed">{featured.excerpt}</p>
+            <p className="text-[14px] text-[#474C53] leading-relaxed">{featured.excerpt}</p>
           </div>
         </div>
 
@@ -109,14 +109,14 @@ export default function JournalPage() {
                 />
               </div>
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-[9px] tracking-[0.25em] uppercase text-[#C8A96E]">{post.category}</span>
-                <span className="w-4 h-px bg-[#E8E5E0]" />
-                <span className="text-[11px] text-[#9B9892]">{post.date}</span>
+                <span className="text-[9px] tracking-[0.25em] uppercase text-[#FF6A00]">{post.category}</span>
+                <span className="w-4 h-px bg-[#D4D9DE]" />
+                <span className="text-[11px] text-[#8A9099]">{post.date}</span>
               </div>
               <h3 className="font-[var(--font-cormorant)] text-xl font-light leading-snug tracking-wide mb-2">
                 {post.title}
               </h3>
-              <p className="text-[13px] text-[#9B9892] leading-relaxed line-clamp-2">{post.excerpt}</p>
+              <p className="text-[13px] text-[#8A9099] leading-relaxed line-clamp-2">{post.excerpt}</p>
             </div>
           ))}
         </div>

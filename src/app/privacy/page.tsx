@@ -12,12 +12,12 @@ const EFFECTIVE_DATE = 'June 21, 2026'
 export default function PrivacyPage() {
   return (
     <div className="pt-[72px]">
-      <div className="py-20 text-center px-6 border-b border-[#E8E5E0]">
+      <div className="py-20 text-center px-6 border-b border-[#D4D9DE]">
         <h1 className="font-[var(--font-cormorant)] text-5xl font-light tracking-widest uppercase">
           Privacy Policy
         </h1>
         <span className="gold-line mt-5 mx-auto block" />
-        <p className="mt-5 text-[13px] text-[#9B9892]">Effective {EFFECTIVE_DATE}</p>
+        <p className="mt-5 text-[13px] text-[#8A9099]">Effective {EFFECTIVE_DATE}</p>
       </div>
 
       <div className="max-w-[760px] mx-auto px-6 md:px-10 py-20 space-y-12">
@@ -72,15 +72,15 @@ export default function PrivacyPage() {
               {title}
             </h2>
             {body ? (
-              <p className="text-[13px] text-[#5C5A56] leading-relaxed">{body}</p>
+              <p className="text-[13px] text-[#474C53] leading-relaxed">{body}</p>
             ) : (
-              <p className="text-[13px] text-[#5C5A56] leading-relaxed">
+              <p className="text-[13px] text-[#474C53] leading-relaxed">
                 For questions or requests related to your personal data, contact us at{' '}
-                <a href="mailto:contact@splatterimpacts.com" className="text-[#C8A96E] hover:underline">
+                <a href="mailto:contact@splatterimpacts.com" className="text-[#FF6A00] hover:underline">
                   contact@splatterimpacts.com
                 </a>{' '}
                 or visit our{' '}
-                <Link href="/contact" className="text-[#C8A96E] hover:underline">
+                <Link href="/contact" className="text-[#FF6A00] hover:underline">
                   Contact page
                 </Link>
                 .

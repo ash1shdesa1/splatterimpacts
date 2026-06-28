@@ -60,10 +60,10 @@ export default function HomePage() {
       </section>
 
       {/* ── MARQUEE ──────────────────────────────────────────── */}
-      <div className="overflow-hidden border-y border-[#E8E5E0] py-4 bg-[#FAF8F5]">
+      <div className="overflow-hidden border-y border-[#D4D9DE] py-4 bg-[#F2F4F6]">
         <div className="marquee-track flex gap-12 whitespace-nowrap will-change-transform">
           {[...MARQUEE_WORDS, ...MARQUEE_WORDS].map((word, i) => (
-            <span key={i} className="text-[11px] tracking-[0.25em] uppercase text-[#9B9892] flex-shrink-0">
+            <span key={i} className="text-[11px] tracking-[0.25em] uppercase text-[#8A9099] flex-shrink-0">
               {word}
             </span>
           ))}
@@ -74,7 +74,7 @@ export default function HomePage() {
       <section className="py-24 md:py-32 px-6 md:px-10">
         <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-16 items-center">
           <div className="grid grid-cols-2 gap-4">
-            <div className="relative aspect-[3/4] overflow-hidden img-zoom-wrapper bg-[#F5F3F0]">
+            <div className="relative aspect-[3/4] overflow-hidden img-zoom-wrapper bg-[#E7EAED]">
               <Image src="/images/products/splatter-bullseye.svg" alt="Reactive splatter bullseye" fill className="object-cover" sizes="(max-width: 768px) 50vw, 25vw" />
             </div>
             <div className="relative aspect-[3/4] overflow-hidden img-zoom-wrapper mt-10 bg-[#15171A]">
@@ -83,26 +83,26 @@ export default function HomePage() {
           </div>
 
           <div className="max-w-[480px]">
-            <p className="text-[10px] tracking-[0.35em] uppercase text-[#C8A96E] mb-5">Why Splatter Impacts</p>
+            <p className="text-[10px] tracking-[0.35em] uppercase text-[#FF6A00] mb-5">Why Splatter Impacts</p>
             <h2 className="font-[var(--font-cormorant)] text-4xl md:text-5xl font-light tracking-wide leading-tight mb-6">
               Instant feedback.
               <br />
               <em className="not-italic italic">Every single round.</em>
             </h2>
             <span className="gold-line mb-6 block" />
-            <p className="text-[14px] text-[#5C5A56] leading-[1.9] mb-4">
+            <p className="text-[14px] text-[#474C53] leading-[1.9] mb-4">
               Splatter Impacts started with one frustration: walking downrange between strings just to
               find out where your shots landed. Our reactive targets burst into bright color on contact,
               so you can read your group from the bench and stay focused on shooting.
             </p>
-            <p className="text-[14px] text-[#5C5A56] leading-[1.9] mb-8">
+            <p className="text-[14px] text-[#474C53] leading-[1.9] mb-8">
               From rimfire plinking to long-range steel, every product is built to take a beating and
               keep performing — heavyweight paper, true AR500 plate, and hardware that holds up in the
               weather.
             </p>
             <Link
               href="/about"
-              className="inline-flex items-center gap-3 text-[11px] tracking-[0.2em] uppercase text-[#0F0F0F] border-b border-[#C8A96E] pb-0.5 hover:text-[#C8A96E] transition-colors"
+              className="inline-flex items-center gap-3 text-[11px] tracking-[0.2em] uppercase text-[#0F0F0F] border-b border-[#FF6A00] pb-0.5 hover:text-[#FF6A00] transition-colors"
             >
               Our Story
               <span className="w-4 h-px bg-current inline-block" />
@@ -112,7 +112,7 @@ export default function HomePage() {
       </section>
 
       {/* ── CATEGORY GRID ────────────────────────────────────── */}
-      <section className="py-8 px-6 md:px-10 bg-[#F5F3F0]">
+      <section className="py-8 px-6 md:px-10 bg-[#E7EAED]">
         <div className="max-w-[1400px] mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {[
@@ -127,7 +127,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 flex items-end p-5">
                   <div>
                     <p className="text-white font-[var(--font-cormorant)] text-xl font-light tracking-widest uppercase">{cat.label}</p>
-                    <div className="w-0 h-px bg-[#C8A96E] group-hover:w-8 transition-all duration-300 mt-1" />
+                    <div className="w-0 h-px bg-[#FF6A00] group-hover:w-8 transition-all duration-300 mt-1" />
                   </div>
                 </div>
               </Link>
@@ -140,7 +140,7 @@ export default function HomePage() {
       <section className="py-24 md:py-32 px-6 md:px-10">
         <div className="max-w-[1400px] mx-auto">
           <div className="text-center mb-14">
-            <p className="text-[10px] tracking-[0.35em] uppercase text-[#C8A96E] mb-3">The Lineup</p>
+            <p className="text-[10px] tracking-[0.35em] uppercase text-[#FF6A00] mb-3">The Lineup</p>
             <h2 className="font-[var(--font-cormorant)] text-4xl md:text-5xl font-light tracking-wide">Best Sellers</h2>
             <span className="gold-line mt-5 mx-auto block" />
           </div>
@@ -181,7 +181,7 @@ export default function HomePage() {
       </section>
 
       {/* ── BRAND VALUES ─────────────────────────────────────── */}
-      <section className="py-24 px-6 md:px-10 bg-[#F5F3F0]">
+      <section className="py-24 px-6 md:px-10 bg-[#E7EAED]">
         <div className="max-w-[1400px] mx-auto grid md:grid-cols-3 gap-12 text-center">
           {[
             {
@@ -201,10 +201,10 @@ export default function HomePage() {
             },
           ].map((v) => (
             <div key={v.title} className="flex flex-col items-center gap-5">
-              <div className="text-[#C8A96E]">{v.icon}</div>
+              <div className="text-[#FF6A00]">{v.icon}</div>
               <h3 className="font-[var(--font-cormorant)] text-xl font-light tracking-widest uppercase">{v.title}</h3>
               <span className="gold-line" />
-              <p className="text-[13px] text-[#5C5A56] leading-[1.9] max-w-[280px]">{v.desc}</p>
+              <p className="text-[13px] text-[#474C53] leading-[1.9] max-w-[280px]">{v.desc}</p>
             </div>
           ))}
         </div>
@@ -213,7 +213,7 @@ export default function HomePage() {
       {/* ── INSTAGRAM ────────────────────────────────────────── */}
       <section className="py-20 px-6 md:px-10">
         <div className="max-w-[1400px] mx-auto text-center">
-          <p className="text-[10px] tracking-[0.35em] uppercase text-[#C8A96E] mb-2">Follow the Range</p>
+          <p className="text-[10px] tracking-[0.35em] uppercase text-[#FF6A00] mb-2">Follow the Range</p>
           <h2 className="font-[var(--font-cormorant)] text-3xl font-light tracking-widest uppercase mb-2">
             @splatterimpacts
           </h2>
@@ -221,7 +221,7 @@ export default function HomePage() {
             href="https://www.instagram.com/splatterimpacts/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[11px] tracking-[0.18em] uppercase text-[#9B9892] hover:text-[#C8A96E] transition-colors"
+            className="text-[11px] tracking-[0.18em] uppercase text-[#8A9099] hover:text-[#FF6A00] transition-colors"
           >
             View on Instagram →
           </a>
@@ -239,7 +239,7 @@ export default function HomePage() {
                 href="https://www.instagram.com/splatterimpacts/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative aspect-square overflow-hidden bg-[#F5F3F0]"
+                className="group relative aspect-square overflow-hidden bg-[#E7EAED]"
               >
                 <Image
                   src={src}

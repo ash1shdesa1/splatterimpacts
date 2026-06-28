@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function ShippingReturnsPage() {
   return (
     <div className="pt-[72px]">
-      <div className="py-20 text-center px-6 border-b border-[#E8E5E0]">
+      <div className="py-20 text-center px-6 border-b border-[#D4D9DE]">
         <h1 className="font-[var(--font-cormorant)] text-5xl font-light tracking-widest uppercase">
           Shipping & Returns
         </h1>
@@ -52,20 +52,20 @@ export default function ShippingReturnsPage() {
             </h2>
             <div className="space-y-6">
               {section.content.map(({ q, a }) => (
-                <div key={q} className="border-l-2 border-[#C8A96E] pl-5">
+                <div key={q} className="border-l-2 border-[#FF6A00] pl-5">
                   <h3 className="text-[11px] tracking-[0.2em] uppercase text-[#0F0F0F] mb-1">{q}</h3>
-                  <p className="text-[13px] text-[#5C5A56] leading-relaxed">{a}</p>
+                  <p className="text-[13px] text-[#474C53] leading-relaxed">{a}</p>
                 </div>
               ))}
             </div>
           </div>
         ))}
 
-        <div className="border-t border-[#E8E5E0] pt-10">
-          <p className="text-[13px] text-[#9B9892]">
+        <div className="border-t border-[#D4D9DE] pt-10">
+          <p className="text-[13px] text-[#8A9099]">
             Questions? We are here to help.{' '}
-            <Link href="/contact" className="text-[#C8A96E] hover:underline">Contact us</Link> or email{' '}
-            <a href="mailto:contact@splatterimpacts.com" className="text-[#C8A96E] hover:underline">
+            <Link href="/contact" className="text-[#FF6A00] hover:underline">Contact us</Link> or email{' '}
+            <a href="mailto:contact@splatterimpacts.com" className="text-[#FF6A00] hover:underline">
               {/* PLACEHOLDER: Update this email address */}
               contact@splatterimpacts.com
             </a>

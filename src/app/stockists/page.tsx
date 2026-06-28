@@ -9,12 +9,12 @@ export const metadata: Metadata = {
 export default function StockistsPage() {
   return (
     <div className="pt-[72px]">
-      <div className="py-20 text-center px-6 border-b border-[#E8E5E0]">
+      <div className="py-20 text-center px-6 border-b border-[#D4D9DE]">
         <h1 className="font-[var(--font-cormorant)] text-5xl font-light tracking-widests uppercase">
           Stockists
         </h1>
         <span className="gold-line mt-5 mx-auto block" />
-        <p className="mt-5 text-[14px] text-[#5C5A56] max-w-[420px] mx-auto leading-relaxed">
+        <p className="mt-5 text-[14px] text-[#474C53] max-w-[420px] mx-auto leading-relaxed">
           Find Splatter Impacts at select gun shops, ranges, and shooting-sports retailers.
         </p>
       </div>
@@ -49,18 +49,18 @@ export default function StockistsPage() {
             },
           ].map((location) => (
             <div key={location.city}>
-              <h2 className="font-[var(--font-cormorant)] text-2xl font-light tracking-widests uppercase mb-6 pb-3 border-b border-[#E8E5E0]">
+              <h2 className="font-[var(--font-cormorant)] text-2xl font-light tracking-widests uppercase mb-6 pb-3 border-b border-[#D4D9DE]">
                 {location.city}
-                <span className="text-[11px] tracking-[0.15em] text-[#9B9892] font-normal ml-2">
+                <span className="text-[11px] tracking-[0.15em] text-[#8A9099] font-normal ml-2">
                   {location.region}
                 </span>
               </h2>
               <div className="space-y-6">
                 {location.stores.map((store) => (
-                  <div key={store.name} className="border-l-2 border-[#C8A96E] pl-5">
+                  <div key={store.name} className="border-l-2 border-[#FF6A00] pl-5">
                     <p className="font-[var(--font-cormorant)] text-lg font-light">{store.name}</p>
-                    <p className="text-[12px] text-[#9B9892] mt-1">{store.address}</p>
-                    <p className="text-[12px] text-[#9B9892]">{store.phone}</p>
+                    <p className="text-[12px] text-[#8A9099] mt-1">{store.address}</p>
+                    <p className="text-[12px] text-[#8A9099]">{store.phone}</p>
                   </div>
                 ))}
               </div>
@@ -68,16 +68,16 @@ export default function StockistsPage() {
           ))}
         </div>
 
-        <div className="mt-16 p-8 bg-[#F5F3F0] text-center">
+        <div className="mt-16 p-8 bg-[#E7EAED] text-center">
           <h3 className="font-[var(--font-cormorant)] text-2xl font-light mb-3">
             Interested in Carrying Splatter Impacts?
           </h3>
-          <p className="text-[13px] text-[#5C5A56] mb-5">
+          <p className="text-[13px] text-[#474C53] mb-5">
             We partner with gun shops, ranges, and shooting-sports retailers who want durable targets their customers will love.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 text-[11px] tracking-[0.2em] uppercase text-[#0F0F0F] border-b border-[#C8A96E] pb-0.5 hover:text-[#C8A96E] transition-colors"
+            className="inline-flex items-center gap-2 text-[11px] tracking-[0.2em] uppercase text-[#0F0F0F] border-b border-[#FF6A00] pb-0.5 hover:text-[#FF6A00] transition-colors"
           >
             Wholesale Inquiries
           </Link>

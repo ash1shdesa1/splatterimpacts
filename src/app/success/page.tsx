@@ -10,25 +10,25 @@ export default function SuccessPage() {
   return (
     <div className="pt-[72px] min-h-screen flex items-center justify-center px-6">
       <div className="max-w-[500px] w-full text-center py-20">
-        <div className="w-14 h-14 rounded-full bg-[#F5F3F0] flex items-center justify-center mx-auto mb-8">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C8A96E" strokeWidth="1.5">
+        <div className="w-14 h-14 rounded-full bg-[#E7EAED] flex items-center justify-center mx-auto mb-8">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF6A00" strokeWidth="1.5">
             <path d="M20 6L9 17l-5-5" />
           </svg>
         </div>
 
-        <p className="text-[10px] tracking-[0.35em] uppercase text-[#C8A96E] mb-3">Order Confirmed</p>
+        <p className="text-[10px] tracking-[0.35em] uppercase text-[#FF6A00] mb-3">Order Confirmed</p>
         <h1 className="font-[var(--font-cormorant)] text-4xl font-light tracking-widest uppercase mb-5">
           Thank You
         </h1>
         <span className="gold-line mx-auto block mb-6" />
 
-        <p className="text-[14px] text-[#5C5A56] leading-[1.9] mb-3">
+        <p className="text-[14px] text-[#474C53] leading-[1.9] mb-3">
           Your order has been received and is being prepared with care.
           A confirmation email with your order details is on its way.
         </p>
-        <p className="text-[14px] text-[#5C5A56] leading-[1.9] mb-10">
+        <p className="text-[14px] text-[#474C53] leading-[1.9] mb-10">
           If you have any questions, reach us at{' '}
-          <a href="mailto:contact@splatterimpacts.com" className="text-[#C8A96E] hover:underline">
+          <a href="mailto:contact@splatterimpacts.com" className="text-[#FF6A00] hover:underline">
             {/* PLACEHOLDER: Update this email address */}
             contact@splatterimpacts.com
           </a>
@@ -37,7 +37,7 @@ export default function SuccessPage() {
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link
             href="/shop"
-            className="text-[11px] tracking-[0.2em] uppercase bg-[#0F0F0F] text-white px-8 py-4 hover:bg-[#C8A96E] transition-colors duration-300"
+            className="text-[11px] tracking-[0.2em] uppercase bg-[#0F0F0F] text-white px-8 py-4 hover:bg-[#FF6A00] transition-colors duration-300"
           >
             Continue Shopping
           </Link>

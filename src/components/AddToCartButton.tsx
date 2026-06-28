@@ -19,8 +19,8 @@ export default function AddToCartButton({ product }: { product: Product }) {
       onClick={handleAdd}
       className={`w-full text-[11px] tracking-[0.2em] uppercase py-4 transition-all duration-300 ${
         added
-          ? 'bg-[#C8A96E] text-white'
-          : 'bg-[#0F0F0F] text-white hover:bg-[#C8A96E]'
+          ? 'bg-[#FF6A00] text-white'
+          : 'bg-[#0F0F0F] text-white hover:bg-[#FF6A00]'
       }`}
     >
       {added ? '✓ Added to Cart' : 'Add to Cart'}

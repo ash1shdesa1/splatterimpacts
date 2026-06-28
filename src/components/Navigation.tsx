@@ -40,7 +40,7 @@ export default function Navigation() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled || !isHome
-            ? 'bg-[#FAF8F5]/95 backdrop-blur-md border-b border-[#E8E5E0]'
+            ? 'bg-[#F2F4F6]/95 backdrop-blur-md border-b border-[#D4D9DE]'
             : 'bg-transparent'
         }`}
       >
@@ -53,7 +53,7 @@ export default function Navigation() {
                   href={link.href}
                   className={`text-[11px] tracking-[0.18em] uppercase font-[var(--font-inter)] transition-colors duration-200 si-link ${
                     pathname.startsWith(link.href)
-                      ? 'text-[#C8A96E]'
+                      ? 'text-[#FF6A00]'
                       : scrolled || !isHome
                       ? 'text-[#0F0F0F]'
                       : 'text-white'
@@ -83,7 +83,7 @@ export default function Navigation() {
                   href={link.href}
                   className={`text-[11px] tracking-[0.18em] uppercase font-[var(--font-inter)] transition-colors duration-200 si-link ${
                     pathname.startsWith(link.href)
-                      ? 'text-[#C8A96E]'
+                      ? 'text-[#FF6A00]'
                       : scrolled || !isHome
                       ? 'text-[#0F0F0F]'
                       : 'text-white'
@@ -104,7 +104,7 @@ export default function Navigation() {
               >
                 <CartIcon />
                 {cartCount > 0 && (
-                  <span className="bg-[#C8A96E] text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">
+                  <span className="bg-[#FF6A00] text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">
                     {cartCount}
                   </span>
                 )}
@@ -121,7 +121,7 @@ export default function Navigation() {
             >
               <CartIcon />
               {cartCount > 0 && (
-                <span className="absolute top-4 right-14 bg-[#C8A96E] text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">
+                <span className="absolute top-4 right-14 bg-[#FF6A00] text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">
                   {cartCount}
                 </span>
               )}
@@ -143,7 +143,7 @@ export default function Navigation() {
 
       {/* Mobile menu */}
       <div
-        className={`fixed inset-0 z-40 bg-[#FAF8F5] flex flex-col transition-all duration-500 ${
+        className={`fixed inset-0 z-40 bg-[#F2F4F6] flex flex-col transition-all duration-500 ${
           menuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
       >
@@ -163,12 +163,12 @@ export default function Navigation() {
           ))}
         </nav>
         <div className="p-8 text-center">
-          <p className="text-[11px] tracking-[0.2em] uppercase text-[#9B9892]">Follow us</p>
+          <p className="text-[11px] tracking-[0.2em] uppercase text-[#8A9099]">Follow us</p>
           <a
             href="https://www.instagram.com/kingofstudsandsolitaire/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[11px] tracking-[0.2em] uppercase text-[#C8A96E] mt-1 block"
+            className="text-[11px] tracking-[0.2em] uppercase text-[#FF6A00] mt-1 block"
           >
             Instagram
           </a>

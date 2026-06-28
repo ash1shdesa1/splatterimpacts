@@ -36,8 +36,8 @@ export default async function ProductPage({ params }: Props) {
   return (
     <div className="pt-[72px]">
       {/* Breadcrumb */}
-      <div className="px-6 md:px-10 py-4 border-b border-[#E8E5E0]">
-        <nav className="max-w-[1400px] mx-auto flex items-center gap-2 text-[11px] tracking-wide text-[#9B9892]">
+      <div className="px-6 md:px-10 py-4 border-b border-[#D4D9DE]">
+        <nav className="max-w-[1400px] mx-auto flex items-center gap-2 text-[11px] tracking-wide text-[#8A9099]">
           <Link href="/" className="hover:text-[#0F0F0F] transition-colors">Home</Link>
           <span>/</span>
           <Link href="/shop" className="hover:text-[#0F0F0F] transition-colors">Shop</Link>
@@ -51,7 +51,7 @@ export default async function ProductPage({ params }: Props) {
         <div className="grid md:grid-cols-2 gap-10 md:gap-20">
           {/* Images */}
           <div className="space-y-4">
-            <div className="relative aspect-square bg-[#F5F3F0] overflow-hidden img-zoom-wrapper">
+            <div className="relative aspect-square bg-[#E7EAED] overflow-hidden img-zoom-wrapper">
               <Image
                 src={product.image}
                 alt={product.title}
@@ -69,7 +69,7 @@ export default async function ProductPage({ params }: Props) {
             {product.images.length > 1 && (
               <div className="grid grid-cols-4 gap-2">
                 {product.images.slice(0, 4).map((img, i) => (
-                  <div key={i} className="relative aspect-square bg-[#F5F3F0] overflow-hidden">
+                  <div key={i} className="relative aspect-square bg-[#E7EAED] overflow-hidden">
                     <Image
                       src={img}
                       alt={`${product.title} view ${i + 1}`}
@@ -86,7 +86,7 @@ export default async function ProductPage({ params }: Props) {
           {/* Details */}
           <div className="flex flex-col justify-start">
             {/* Category */}
-            <p className="text-[10px] tracking-[0.3em] uppercase text-[#C8A96E] mb-3">
+            <p className="text-[10px] tracking-[0.3em] uppercase text-[#FF6A00] mb-3">
               {product.categories[0]?.replace('-', ' ')}
             </p>
 
@@ -103,7 +103,7 @@ export default async function ProductPage({ params }: Props) {
             <span className="gold-line mb-6 block" />
 
             {/* Description */}
-            <p className="text-[14px] text-[#5C5A56] leading-[1.9] mb-8">
+            <p className="text-[14px] text-[#474C53] leading-[1.9] mb-8">
               {product.description}
             </p>
 
@@ -119,12 +119,12 @@ export default async function ProductPage({ params }: Props) {
             </div>
 
             {/* Product details */}
-            <div className="border-t border-[#E8E5E0] pt-6">
-              <h3 className="text-[10px] tracking-[0.25em] uppercase text-[#9B9892] mb-4">Details</h3>
+            <div className="border-t border-[#D4D9DE] pt-6">
+              <h3 className="text-[10px] tracking-[0.25em] uppercase text-[#8A9099] mb-4">Details</h3>
               <ul className="space-y-2">
                 {product.details.map((d, i) => (
-                  <li key={i} className="flex items-start gap-3 text-[13px] text-[#5C5A56]">
-                    <span className="w-1 h-1 rounded-full bg-[#C8A96E] mt-2 flex-shrink-0" />
+                  <li key={i} className="flex items-start gap-3 text-[13px] text-[#474C53]">
+                    <span className="w-1 h-1 rounded-full bg-[#FF6A00] mt-2 flex-shrink-0" />
                     {d}
                   </li>
                 ))}
@@ -132,14 +132,14 @@ export default async function ProductPage({ params }: Props) {
             </div>
 
             {/* Shipping */}
-            <div className="border-t border-[#E8E5E0] pt-6 mt-6 space-y-3">
+            <div className="border-t border-[#D4D9DE] pt-6 mt-6 space-y-3">
               {[
                 { icon: '📦', text: 'Free shipping on all orders over $99' },
                 { icon: '↩', text: 'Free returns within 30 days' },
                 { icon: '🔒', text: 'Secure checkout via Stripe' },
                 { icon: '💬', text: 'Questions? Email contact@splatterimpacts.com' },
               ].map(({ icon, text }) => (
-                <div key={text} className="flex items-center gap-3 text-[12px] text-[#9B9892]">
+                <div key={text} className="flex items-center gap-3 text-[12px] text-[#8A9099]">
                   <span>{icon}</span>
                   <span>{text}</span>
                 </div>
@@ -151,7 +151,7 @@ export default async function ProductPage({ params }: Props) {
 
       {/* Related products */}
       {related.length > 0 && (
-        <section className="py-20 px-6 md:px-10 bg-[#F5F3F0]">
+        <section className="py-20 px-6 md:px-10 bg-[#E7EAED]">
           <div className="max-w-[1400px] mx-auto">
             <div className="text-center mb-12">
               <h2 className="font-[var(--font-cormorant)] text-3xl font-light tracking-widest uppercase">

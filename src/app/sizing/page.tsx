@@ -17,12 +17,12 @@ const SIZES = [
 export default function SizingPage() {
   return (
     <div className="pt-[72px]">
-      <div className="py-20 text-center px-6 border-b border-[#E8E5E0]">
+      <div className="py-20 text-center px-6 border-b border-[#D4D9DE]">
         <h1 className="font-[var(--font-cormorant)] text-5xl font-light tracking-widest uppercase">
           Target Sizing Guide
         </h1>
         <span className="gold-line mt-5 mx-auto block" />
-        <p className="mt-5 text-[14px] text-[#5C5A56] max-w-[420px] mx-auto leading-relaxed">
+        <p className="mt-5 text-[14px] text-[#474C53] max-w-[420px] mx-auto leading-relaxed">
           The right target size keeps practice challenging without being frustrating. Here is how to
           match size to your distance and firearm.
         </p>
@@ -52,10 +52,10 @@ export default function SizingPage() {
                 desc: 'New shooters build confidence on larger targets and silhouettes. As groups tighten, shrink the target or back up to keep every session a challenge.',
               },
             ].map((m) => (
-              <div key={m.num} className="border-l-2 border-[#E8E5E0] pl-5">
-                <p className="text-[10px] tracking-[0.3em] text-[#C8A96E] mb-2">{m.num}</p>
+              <div key={m.num} className="border-l-2 border-[#D4D9DE] pl-5">
+                <p className="text-[10px] tracking-[0.3em] text-[#FF6A00] mb-2">{m.num}</p>
                 <h3 className="font-[var(--font-cormorant)] text-xl font-light mb-2">{m.title}</h3>
-                <p className="text-[13px] text-[#5C5A56] leading-relaxed">{m.desc}</p>
+                <p className="text-[13px] text-[#474C53] leading-relaxed">{m.desc}</p>
               </div>
             ))}
           </div>
@@ -69,9 +69,9 @@ export default function SizingPage() {
           <div className="overflow-x-auto">
             <table className="w-full text-[13px]">
               <thead>
-                <tr className="border-b border-[#E8E5E0]">
+                <tr className="border-b border-[#D4D9DE]">
                   {['Target Size', 'Pistol Distance', 'Rifle Distance', 'Best For'].map((h) => (
-                    <th key={h} className="text-left text-[10px] tracking-[0.2em] uppercase text-[#9B9892] pb-3 pr-8">
+                    <th key={h} className="text-left text-[10px] tracking-[0.2em] uppercase text-[#8A9099] pb-3 pr-8">
                       {h}
                     </th>
                   ))}
@@ -79,24 +79,24 @@ export default function SizingPage() {
               </thead>
               <tbody>
                 {SIZES.map((row, i) => (
-                  <tr key={row.size} className={`border-b border-[#E8E5E0] ${i % 2 === 0 ? 'bg-[#FAFAF8]' : ''}`}>
+                  <tr key={row.size} className={`border-b border-[#D4D9DE] ${i % 2 === 0 ? 'bg-[#F2F4F6]' : ''}`}>
                     <td className="py-3 pr-8 font-[var(--font-cormorant)] text-base">{row.size}</td>
-                    <td className="py-3 pr-8 text-[#5C5A56]">{row.pistol}</td>
-                    <td className="py-3 pr-8 text-[#5C5A56]">{row.rifle}</td>
-                    <td className="py-3 text-[#5C5A56]">{row.use}</td>
+                    <td className="py-3 pr-8 text-[#474C53]">{row.pistol}</td>
+                    <td className="py-3 pr-8 text-[#474C53]">{row.rifle}</td>
+                    <td className="py-3 text-[#474C53]">{row.use}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="mt-4 text-[12px] text-[#9B9892] leading-relaxed">
+          <p className="mt-4 text-[12px] text-[#8A9099] leading-relaxed">
             Distances are general starting points — always follow your range&apos;s rules and the
             minimum safe distances for steel.
           </p>
         </div>
 
         {/* Tips */}
-        <div className="bg-[#F5F3F0] p-8">
+        <div className="bg-[#E7EAED] p-8">
           <h3 className="font-[var(--font-cormorant)] text-2xl font-light mb-5">Sizing Tips</h3>
           <ul className="space-y-3">
             {[
@@ -106,17 +106,17 @@ export default function SizingPage() {
               'Steel has minimum-distance requirements — never shoot it closer than rated.',
               'Mixing sizes on one stand makes for a great transition and speed drill.',
             ].map((tip) => (
-              <li key={tip} className="flex items-start gap-3 text-[13px] text-[#5C5A56]">
-                <span className="w-1 h-1 rounded-full bg-[#C8A96E] mt-2 flex-shrink-0" />
+              <li key={tip} className="flex items-start gap-3 text-[13px] text-[#474C53]">
+                <span className="w-1 h-1 rounded-full bg-[#FF6A00] mt-2 flex-shrink-0" />
                 {tip}
               </li>
             ))}
           </ul>
         </div>
 
-        <p className="text-[13px] text-[#9B9892] text-center">
+        <p className="text-[13px] text-[#8A9099] text-center">
           Still unsure what to run? Email us at{' '}
-          <a href="mailto:contact@splatterimpacts.com" className="text-[#C8A96E] hover:underline">
+          <a href="mailto:contact@splatterimpacts.com" className="text-[#FF6A00] hover:underline">
             contact@splatterimpacts.com
           </a>{' '}
           and we will help you dial it in.

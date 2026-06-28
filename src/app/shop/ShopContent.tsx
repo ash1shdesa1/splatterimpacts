@@ -46,8 +46,8 @@ export default function ShopContent() {
   return (
     <div className="pt-[72px]">
       {/* Header */}
-      <div className="py-16 md:py-20 text-center px-6 border-b border-[#E8E5E0]">
-        <p className="text-[10px] tracking-[0.35em] uppercase text-[#C8A96E] mb-3">The Lineup</p>
+      <div className="py-16 md:py-20 text-center px-6 border-b border-[#D4D9DE]">
+        <p className="text-[10px] tracking-[0.35em] uppercase text-[#FF6A00] mb-3">The Lineup</p>
         <h1 className="font-[var(--font-cormorant)] text-4xl md:text-5xl font-light tracking-widest uppercase">
           Shop
         </h1>
@@ -60,7 +60,7 @@ export default function ShopContent() {
           <div className="hidden md:flex items-center gap-1 flex-wrap">
             <button
               onClick={() => handleCategory('all')}
-              className={`text-[10px] tracking-[0.2em] uppercase px-4 py-2 transition-colors ${activeCategory === 'all' ? 'text-white bg-[#0F0F0F]' : 'text-[#5C5A56] hover:text-[#0F0F0F]'}`}
+              className={`text-[10px] tracking-[0.2em] uppercase px-4 py-2 transition-colors ${activeCategory === 'all' ? 'text-white bg-[#0F0F0F]' : 'text-[#474C53] hover:text-[#0F0F0F]'}`}
             >
               All
             </button>
@@ -68,7 +68,7 @@ export default function ShopContent() {
               <button
                 key={cat.id}
                 onClick={() => handleCategory(cat.id)}
-                className={`text-[10px] tracking-[0.2em] uppercase px-4 py-2 transition-colors ${activeCategory === cat.id ? 'text-white bg-[#0F0F0F]' : 'text-[#5C5A56] hover:text-[#0F0F0F]'}`}
+                className={`text-[10px] tracking-[0.2em] uppercase px-4 py-2 transition-colors ${activeCategory === cat.id ? 'text-white bg-[#0F0F0F]' : 'text-[#474C53] hover:text-[#0F0F0F]'}`}
               >
                 {cat.label}
               </button>
@@ -77,23 +77,23 @@ export default function ShopContent() {
 
           {/* Mobile filter */}
           <button
-            className="md:hidden flex items-center gap-2 text-[11px] tracking-[0.18em] uppercase border border-[#E8E5E0] px-5 py-2.5"
+            className="md:hidden flex items-center gap-2 text-[11px] tracking-[0.18em] uppercase border border-[#D4D9DE] px-5 py-2.5"
             onClick={() => setFilterOpen(!filterOpen)}
           >
             <svg width="14" height="12" viewBox="0 0 14 12" fill="none" stroke="currentColor" strokeWidth="1.2">
               <path d="M1 1h12M3 6h8M5 11h4" />
             </svg>
-            Filter {activeCategory !== 'all' && <span className="w-1.5 h-1.5 rounded-full bg-[#C8A96E]" />}
+            Filter {activeCategory !== 'all' && <span className="w-1.5 h-1.5 rounded-full bg-[#FF6A00]" />}
           </button>
 
           <div className="flex items-center gap-4">
-            <p className="text-[11px] text-[#9B9892] tracking-wide whitespace-nowrap">
+            <p className="text-[11px] text-[#8A9099] tracking-wide whitespace-nowrap">
               {filtered.length} product{filtered.length !== 1 ? 's' : ''}
             </p>
             <select
               value={sort}
               onChange={(e) => setSort(e.target.value)}
-              className="text-[11px] tracking-[0.12em] uppercase border border-[#E8E5E0] px-3 py-2 bg-transparent text-[#5C5A56] focus:outline-none focus:border-[#C8A96E] cursor-pointer"
+              className="text-[11px] tracking-[0.12em] uppercase border border-[#D4D9DE] px-3 py-2 bg-transparent text-[#474C53] focus:outline-none focus:border-[#FF6A00] cursor-pointer"
             >
               {SORT_OPTIONS.map((o) => (
                 <option key={o.value} value={o.value}>{o.label}</option>
@@ -104,11 +104,11 @@ export default function ShopContent() {
 
         {/* Mobile filter panel */}
         {filterOpen && (
-          <div className="md:hidden border border-[#E8E5E0] mb-8 p-5">
+          <div className="md:hidden border border-[#D4D9DE] mb-8 p-5">
             <div className="grid grid-cols-2 gap-2">
-              <button onClick={() => handleCategory('all')} className={`text-[10px] tracking-[0.18em] uppercase py-2.5 transition-colors ${activeCategory === 'all' ? 'bg-[#0F0F0F] text-white' : 'border border-[#E8E5E0] text-[#5C5A56]'}`}>All</button>
+              <button onClick={() => handleCategory('all')} className={`text-[10px] tracking-[0.18em] uppercase py-2.5 transition-colors ${activeCategory === 'all' ? 'bg-[#0F0F0F] text-white' : 'border border-[#D4D9DE] text-[#474C53]'}`}>All</button>
               {CATEGORIES.map((cat) => (
-                <button key={cat.id} onClick={() => handleCategory(cat.id)} className={`text-[10px] tracking-[0.18em] uppercase py-2.5 transition-colors ${activeCategory === cat.id ? 'bg-[#0F0F0F] text-white' : 'border border-[#E8E5E0] text-[#5C5A56]'}`}>{cat.label}</button>
+                <button key={cat.id} onClick={() => handleCategory(cat.id)} className={`text-[10px] tracking-[0.18em] uppercase py-2.5 transition-colors ${activeCategory === cat.id ? 'bg-[#0F0F0F] text-white' : 'border border-[#D4D9DE] text-[#474C53]'}`}>{cat.label}</button>
               ))}
             </div>
           </div>
@@ -117,7 +117,7 @@ export default function ShopContent() {
         {/* Grid */}
         {filtered.length === 0 ? (
           <div className="py-24 text-center">
-            <p className="font-[var(--font-cormorant)] text-2xl font-light text-[#9B9892]">No products found</p>
+            <p className="font-[var(--font-cormorant)] text-2xl font-light text-[#8A9099]">No products found</p>
           </div>
         ) : (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">

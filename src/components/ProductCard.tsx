@@ -26,7 +26,7 @@ export default function ProductCard({ product }: Props) {
     <article className="group relative">
       <Link href={`/shop/${product.slug}`}>
         {/* Image */}
-        <div className="relative aspect-[3/4] bg-[#F5F3F0] overflow-hidden img-zoom-wrapper">
+        <div className="relative aspect-[3/4] bg-[#E7EAED] overflow-hidden img-zoom-wrapper">
           <Image
             src={product.image}
             alt={product.title}
@@ -40,10 +40,10 @@ export default function ProductCard({ product }: Props) {
             </div>
           )}
           {/* Quick add overlay */}
-          <div className="absolute inset-x-0 bottom-0 bg-[#FAF8F5]/95 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out">
+          <div className="absolute inset-x-0 bottom-0 bg-[#F2F4F6]/95 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out">
             <button
               onClick={handleAdd}
-              className="w-full py-3.5 text-[10px] tracking-[0.2em] uppercase text-[#0F0F0F] hover:text-[#C8A96E] transition-colors"
+              className="w-full py-3.5 text-[10px] tracking-[0.2em] uppercase text-[#0F0F0F] hover:text-[#FF6A00] transition-colors"
             >
               {added ? '✓ Added to Cart' : 'Quick Add'}
             </button>
@@ -52,10 +52,10 @@ export default function ProductCard({ product }: Props) {
 
         {/* Info */}
         <div className="mt-4 space-y-1">
-          <h3 className="font-[var(--font-cormorant)] text-[15px] font-light leading-snug tracking-wide group-hover:text-[#C8A96E] transition-colors duration-200">
+          <h3 className="font-[var(--font-cormorant)] text-[15px] font-light leading-snug tracking-wide group-hover:text-[#FF6A00] transition-colors duration-200">
             {product.title}
           </h3>
-          <p className="text-[12px] text-[#5C5A56] tracking-wide">
+          <p className="text-[12px] text-[#474C53] tracking-wide">
             ${product.price.toLocaleString()}
           </p>
         </div>

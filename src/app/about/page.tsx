@@ -27,7 +27,7 @@ export default function AboutPage() {
       {/* Quote */}
       <section className="py-24 px-6 md:px-10">
         <div className="max-w-[800px] mx-auto text-center">
-          <p className="font-[var(--font-cormorant)] text-xl md:text-2xl font-light italic text-[#5C5A56] leading-[1.8]">
+          <p className="font-[var(--font-cormorant)] text-xl md:text-2xl font-light italic text-[#474C53] leading-[1.8]">
             &ldquo;See every hit. Skip the walk. Make every round count.&rdquo;
           </p>
         </div>
@@ -37,12 +37,12 @@ export default function AboutPage() {
       <section className="pb-24 px-6 md:px-10">
         <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-16 md:gap-24 items-start">
           <div>
-            <p className="text-[10px] tracking-[0.35em] uppercase text-[#C8A96E] mb-5">Our Beginning</p>
+            <p className="text-[10px] tracking-[0.35em] uppercase text-[#FF6A00] mb-5">Our Beginning</p>
             <h2 className="font-[var(--font-cormorant)] text-4xl font-light tracking-wide leading-tight mb-8">
               Built by shooters, for shooters
             </h2>
 
-            <div className="space-y-5 text-[14px] text-[#5C5A56] leading-[1.95]">
+            <div className="space-y-5 text-[14px] text-[#474C53] leading-[1.95]">
               <p>
                 Splatter Impacts started at the range, with one shared frustration: spending half of
                 every session walking downrange just to see where rounds landed. There had to be a
@@ -65,7 +65,7 @@ export default function AboutPage() {
           </div>
 
           <div className="space-y-4">
-            <div className="relative aspect-[4/5] overflow-hidden img-zoom-wrapper bg-[#F5F3F0]">
+            <div className="relative aspect-[4/5] overflow-hidden img-zoom-wrapper bg-[#E7EAED]">
               <Image
                 src="/images/products/splatter-bullseye.svg"
                 alt="Reactive splatter target"
@@ -79,7 +79,7 @@ export default function AboutPage() {
       </section>
 
       {/* Purpose */}
-      <section className="py-20 px-6 md:px-10 bg-[#F5F3F0]">
+      <section className="py-20 px-6 md:px-10 bg-[#E7EAED]">
         <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-16 items-center">
           <div className="relative aspect-[4/5] overflow-hidden img-zoom-wrapper bg-[#15171A]">
             <Image
@@ -92,11 +92,11 @@ export default function AboutPage() {
           </div>
 
           <div>
-            <p className="text-[10px] tracking-[0.35em] uppercase text-[#C8A96E] mb-5">Our Purpose</p>
+            <p className="text-[10px] tracking-[0.35em] uppercase text-[#FF6A00] mb-5">Our Purpose</p>
             <h2 className="font-[var(--font-cormorant)] text-4xl font-light tracking-wide leading-tight mb-8">
               Better feedback, better shooting
             </h2>
-            <div className="space-y-5 text-[14px] text-[#5C5A56] leading-[1.95]">
+            <div className="space-y-5 text-[14px] text-[#474C53] leading-[1.95]">
               <p>
                 Shooters come to Splatter Impacts to get more out of every trip to the range — the new
                 shooter learning trigger control on a reactive dot, the competitor running steel on the
@@ -118,7 +118,7 @@ export default function AboutPage() {
       <section className="py-24 px-6 md:px-10">
         <div className="max-w-[1400px] mx-auto">
           <div className="text-center mb-16">
-            <p className="text-[10px] tracking-[0.35em] uppercase text-[#C8A96E] mb-3">What We Stand For</p>
+            <p className="text-[10px] tracking-[0.35em] uppercase text-[#FF6A00] mb-3">What We Stand For</p>
             <h2 className="font-[var(--font-cormorant)] text-4xl font-light tracking-widest uppercase">Our Values</h2>
             <span className="gold-line mt-5 mx-auto block" />
           </div>
@@ -143,7 +143,7 @@ export default function AboutPage() {
                   {v.title}
                 </h3>
                 <span className="gold-line mx-auto block" />
-                <p className="text-[13px] text-[#5C5A56] leading-[1.9]">{v.desc}</p>
+                <p className="text-[13px] text-[#474C53] leading-[1.9]">{v.desc}</p>
               </div>
             ))}
           </div>
@@ -152,7 +152,7 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section className="py-16 px-6 md:px-10 bg-[#0F0F0F] text-white text-center">
-        <p className="text-[10px] tracking-[0.35em] uppercase text-[#C8A96E] mb-4">Get to the Range</p>
+        <p className="text-[10px] tracking-[0.35em] uppercase text-[#FF6A00] mb-4">Get to the Range</p>
         <h2 className="font-[var(--font-cormorant)] text-4xl font-light tracking-widest uppercase mb-6">
           Gear Up
         </h2>

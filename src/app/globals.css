@@ -1,17 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-  --color-si-cream: #FAF8F5;
+  /* Tactical palette: blaze-orange accent, cool industrial neutrals, hard black */
+  --color-si-cream: #F2F4F6;
   --color-si-black: #0F0F0F;
-  --color-si-gold: #C8A96E;
-  --color-si-gold-light: #E8D5B0;
-  --color-si-gold-dark: #A07840;
-  --color-si-gray-50: #FAFAF8;
-  --color-si-gray-100: #F5F3F0;
-  --color-si-gray-200: #E8E5E0;
-  --color-si-gray-400: #9B9892;
-  --color-si-gray-600: #5C5A56;
-  --color-si-gray-800: #2A2926;
+  --color-si-gold: #FF6A00;
+  --color-si-gold-light: #FF9D4D;
+  --color-si-gold-dark: #C24E00;
+  --color-si-gray-50: #F2F4F6;
+  --color-si-gray-100: #E7EAED;
+  --color-si-gray-200: #D4D9DE;
+  --color-si-gray-400: #8A9099;
+  --color-si-gray-600: #474C53;
+  --color-si-gray-800: #1B1E23;
   --font-sans: var(--font-inter), 'Helvetica Neue', sans-serif;
   --font-serif: var(--font-cormorant), 'Georgia', serif;
 }
@@ -89,10 +90,10 @@ body {
   animation: marquee 40s linear infinite;
 }
 
-/* Gold separator */
+/* Accent separator */
 .gold-line {
   display: block;
-  width: 48px;
-  height: 1px;
+  width: 44px;
+  height: 2px;
   background: var(--color-si-gold);
 }

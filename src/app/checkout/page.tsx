@@ -48,7 +48,7 @@ export default function CheckoutPage() {
           <p className="font-[var(--font-cormorant)] text-3xl font-light mb-4">Your cart is empty</p>
           <Link
             href="/shop"
-            className="inline-flex items-center gap-2 text-[11px] tracking-[0.2em] uppercase text-[#C8A96E] border-b border-[#C8A96E] pb-0.5"
+            className="inline-flex items-center gap-2 text-[11px] tracking-[0.2em] uppercase text-[#FF6A00] border-b border-[#FF6A00] pb-0.5"
           >
             Explore the Collection
           </Link>
@@ -59,7 +59,7 @@ export default function CheckoutPage() {
 
   return (
     <div className="pt-[72px]">
-      <div className="py-16 text-center px-6 border-b border-[#E8E5E0]">
+      <div className="py-16 text-center px-6 border-b border-[#D4D9DE]">
         <h1 className="font-[var(--font-cormorant)] text-4xl font-light tracking-widest uppercase">
           Review Your Order
         </h1>
@@ -68,16 +68,16 @@ export default function CheckoutPage() {
       <div className="max-w-[1200px] mx-auto px-6 md:px-10 py-16 grid md:grid-cols-[1fr_400px] gap-12">
         {/* Order items */}
         <div>
-          <h2 className="text-[10px] tracking-[0.25em] uppercase text-[#9B9892] mb-6">Order Summary</h2>
-          <ul className="divide-y divide-[#E8E5E0]">
+          <h2 className="text-[10px] tracking-[0.25em] uppercase text-[#8A9099] mb-6">Order Summary</h2>
+          <ul className="divide-y divide-[#D4D9DE]">
             {items.map(({ product, quantity }) => (
               <li key={product.id} className="py-5 flex gap-5">
-                <div className="relative w-20 h-20 bg-[#F5F3F0] flex-shrink-0 overflow-hidden">
+                <div className="relative w-20 h-20 bg-[#E7EAED] flex-shrink-0 overflow-hidden">
                   <Image src={product.image} alt={product.title} fill className="object-cover" sizes="80px" />
                 </div>
                 <div className="flex-1">
                   <p className="font-[var(--font-cormorant)] text-base font-light">{product.title}</p>
-                  <p className="text-[12px] text-[#9B9892] mt-0.5">Qty: {quantity}</p>
+                  <p className="text-[12px] text-[#8A9099] mt-0.5">Qty: {quantity}</p>
                 </div>
                 <p className="font-[var(--font-cormorant)] text-base font-light whitespace-nowrap">
                   ${(product.price * quantity).toLocaleString()}
@@ -89,29 +89,29 @@ export default function CheckoutPage() {
 
         {/* Summary sidebar */}
         <div>
-          <div className="bg-[#F5F3F0] p-8">
-            <h2 className="text-[10px] tracking-[0.25em] uppercase text-[#9B9892] mb-6">Payment</h2>
+          <div className="bg-[#E7EAED] p-8">
+            <h2 className="text-[10px] tracking-[0.25em] uppercase text-[#8A9099] mb-6">Payment</h2>
 
             <div className="space-y-3 mb-6">
-              <div className="flex justify-between text-[13px] text-[#5C5A56]">
+              <div className="flex justify-between text-[13px] text-[#474C53]">
                 <span>Subtotal</span>
                 <span>${cartTotal.toLocaleString()}</span>
               </div>
-              <div className="flex justify-between text-[13px] text-[#5C5A56]">
+              <div className="flex justify-between text-[13px] text-[#474C53]">
                 <span>Shipping</span>
-                <span className="text-[#C8A96E]">
+                <span className="text-[#FF6A00]">
                   {cartTotal >= 200 ? 'Complimentary' : '$15.00'}
                 </span>
               </div>
-              <div className="flex justify-between text-[13px] text-[#9B9892]">
+              <div className="flex justify-between text-[13px] text-[#8A9099]">
                 <span>Tax</span>
                 <span>Calculated at checkout</span>
               </div>
             </div>
 
-            <div className="border-t border-[#E8E5E0] pt-4 mb-8">
+            <div className="border-t border-[#D4D9DE] pt-4 mb-8">
               <div className="flex justify-between items-baseline">
-                <span className="text-[11px] tracking-[0.18em] uppercase text-[#9B9892]">Total</span>
+                <span className="text-[11px] tracking-[0.18em] uppercase text-[#8A9099]">Total</span>
                 <span className="font-[var(--font-cormorant)] text-2xl font-light">
                   ${(cartTotal + (cartTotal >= 200 ? 0 : 15)).toLocaleString()}
                 </span>
@@ -129,14 +129,14 @@ export default function CheckoutPage() {
               disabled={loading}
               className={`w-full text-[11px] tracking-[0.2em] uppercase py-4 transition-all duration-300 ${
                 loading
-                  ? 'bg-[#9B9892] text-white cursor-not-allowed'
-                  : 'bg-[#0F0F0F] text-white hover:bg-[#C8A96E]'
+                  ? 'bg-[#8A9099] text-white cursor-not-allowed'
+                  : 'bg-[#0F0F0F] text-white hover:bg-[#FF6A00]'
               }`}
             >
               {loading ? 'Preparing Checkout…' : 'Proceed to Secure Checkout'}
             </button>
 
-            <div className="mt-4 flex items-center justify-center gap-2 text-[11px] text-[#9B9892]">
+            <div className="mt-4 flex items-center justify-center gap-2 text-[11px] text-[#8A9099]">
               <svg width="12" height="14" viewBox="0 0 12 14" fill="none" stroke="currentColor" strokeWidth="1.2">
                 <rect x="1" y="6" width="10" height="7" rx="1" />
                 <path d="M3.5 6V4a2.5 2.5 0 015 0v2" />
@@ -146,13 +146,13 @@ export default function CheckoutPage() {
 
             <div className="mt-4 flex items-center justify-center gap-2">
               {['visa', 'mc', 'amex', 'discover'].map((card) => (
-                <div key={card} className="w-10 h-6 bg-white border border-[#E8E5E0] rounded flex items-center justify-center">
-                  <span className="text-[8px] text-[#9B9892] uppercase">{card}</span>
+                <div key={card} className="w-10 h-6 bg-white border border-[#D4D9DE] rounded flex items-center justify-center">
+                  <span className="text-[8px] text-[#8A9099] uppercase">{card}</span>
                 </div>
               ))}
             </div>
 
-            <p className="mt-5 text-[11px] text-[#9B9892] text-center leading-relaxed">
+            <p className="mt-5 text-[11px] text-[#8A9099] text-center leading-relaxed">
               Free returns within 30 days.
               <br />
               Complimentary shipping on orders over $200.

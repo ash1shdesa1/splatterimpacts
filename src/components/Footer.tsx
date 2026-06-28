@@ -18,7 +18,7 @@ export default function Footer() {
               href="https://www.instagram.com/splatterimpacts/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[11px] tracking-[0.18em] uppercase text-white/40 hover:text-[#C8A96E] transition-colors"
+              className="text-[11px] tracking-[0.18em] uppercase text-white/40 hover:text-[#FF6A00] transition-colors"
             >
               Instagram
             </a>
@@ -40,7 +40,7 @@ export default function Footer() {
               <li key={href}>
                 <Link
                   href={href}
-                  className="text-[12px] text-white/50 hover:text-[#C8A96E] transition-colors tracking-wide"
+                  className="text-[12px] text-white/50 hover:text-[#FF6A00] transition-colors tracking-wide"
                 >
                   {label}
                 </Link>
@@ -61,7 +61,7 @@ export default function Footer() {
               <li key={href}>
                 <Link
                   href={href}
-                  className="text-[12px] text-white/50 hover:text-[#C8A96E] transition-colors tracking-wide"
+                  className="text-[12px] text-white/50 hover:text-[#FF6A00] transition-colors tracking-wide"
                 >
                   {label}
                 </Link>
@@ -83,7 +83,7 @@ export default function Footer() {
               <li key={href}>
                 <Link
                   href={href}
-                  className="text-[12px] text-white/50 hover:text-[#C8A96E] transition-colors tracking-wide"
+                  className="text-[12px] text-white/50 hover:text-[#FF6A00] transition-colors tracking-wide"
                 >
                   {label}
                 </Link>
@@ -93,7 +93,7 @@ export default function Footer() {
           <div className="mt-6">
             <a
               href="mailto:contact@splatterimpacts.com"
-              className="text-[12px] text-white/50 hover:text-[#C8A96E] transition-colors"
+              className="text-[12px] text-white/50 hover:text-[#FF6A00] transition-colors"
             >
               {/* PLACEHOLDER: Update this email address */}
               contact@splatterimpacts.com

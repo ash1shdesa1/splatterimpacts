@@ -9,13 +9,13 @@ export const metadata: Metadata = {
 export default function CarePage() {
   return (
     <div className="pt-[72px]">
-      <div className="py-20 text-center px-6 border-b border-[#E8E5E0]">
-        <p className="text-[10px] tracking-[0.35em] uppercase text-[#C8A96E] mb-3">Range Guide</p>
+      <div className="py-20 text-center px-6 border-b border-[#D4D9DE]">
+        <p className="text-[10px] tracking-[0.35em] uppercase text-[#FF6A00] mb-3">Range Guide</p>
         <h1 className="font-[var(--font-cormorant)] text-5xl font-light tracking-widest uppercase">
           Range &amp; Care Guide
         </h1>
         <span className="gold-line mt-5 mx-auto block" />
-        <p className="mt-5 text-[14px] text-[#5C5A56] max-w-[440px] mx-auto leading-relaxed">
+        <p className="mt-5 text-[14px] text-[#474C53] max-w-[440px] mx-auto leading-relaxed">
           Set up safely, shoot smart, and your steel will last for years. Always follow your range
           rules and the four firearm safety rules first.
         </p>
@@ -98,19 +98,19 @@ export default function CarePage() {
             </h2>
             <div className="space-y-6">
               {section.items.map(({ q, a }) => (
-                <div key={q} className="border-l-2 border-[#C8A96E] pl-5">
+                <div key={q} className="border-l-2 border-[#FF6A00] pl-5">
                   <h3 className="text-[11px] tracking-[0.2em] uppercase text-[#0F0F0F] mb-1">{q}</h3>
-                  <p className="text-[13px] text-[#5C5A56] leading-relaxed">{a}</p>
+                  <p className="text-[13px] text-[#474C53] leading-relaxed">{a}</p>
                 </div>
               ))}
             </div>
           </div>
         ))}
 
-        <div className="border-t border-[#E8E5E0] pt-10">
-          <p className="text-[13px] text-[#9B9892]">
+        <div className="border-t border-[#D4D9DE] pt-10">
+          <p className="text-[13px] text-[#8A9099]">
             Questions about a specific target or setup?{' '}
-            <Link href="/contact" className="text-[#C8A96E] hover:underline">
+            <Link href="/contact" className="text-[#FF6A00] hover:underline">
               Get in touch
             </Link>{' '}
             and we&apos;ll point you the right way.
