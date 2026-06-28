@@ -51,7 +51,7 @@ export default function Navigation() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`text-[11px] tracking-[0.18em] uppercase font-[var(--font-inter)] transition-colors duration-200 vero-link ${
+                  className={`text-[11px] tracking-[0.18em] uppercase font-[var(--font-inter)] transition-colors duration-200 si-link ${
                     pathname.startsWith(link.href)
                       ? 'text-[#C8A96E]'
                       : scrolled || !isHome
@@ -72,7 +72,7 @@ export default function Navigation() {
               scrolled || !isHome ? 'text-[#0F0F0F]' : 'text-white'
             }`}
           >
-            VERO
+            Splatter Impacts
           </Link>
 
           {/* Desktop nav right */}
@@ -81,7 +81,7 @@ export default function Navigation() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`text-[11px] tracking-[0.18em] uppercase font-[var(--font-inter)] transition-colors duration-200 vero-link ${
+                  className={`text-[11px] tracking-[0.18em] uppercase font-[var(--font-inter)] transition-colors duration-200 si-link ${
                     pathname.startsWith(link.href)
                       ? 'text-[#C8A96E]'
                       : scrolled || !isHome

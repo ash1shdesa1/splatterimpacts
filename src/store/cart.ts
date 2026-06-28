@@ -71,7 +71,7 @@ export const useCart = create<CartStore>()(
       },
     }),
     {
-      name: 'vero-cart',
+      name: 'splatterimpacts-cart',
       partialize: (state) => ({ items: state.items }),
     }
   )

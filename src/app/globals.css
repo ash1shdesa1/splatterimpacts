@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --color-vero-cream: #FAF8F5;
-  --color-vero-black: #0F0F0F;
-  --color-vero-gold: #C8A96E;
-  --color-vero-gold-light: #E8D5B0;
-  --color-vero-gold-dark: #A07840;
-  --color-vero-gray-50: #FAFAF8;
-  --color-vero-gray-100: #F5F3F0;
-  --color-vero-gray-200: #E8E5E0;
-  --color-vero-gray-400: #9B9892;
-  --color-vero-gray-600: #5C5A56;
-  --color-vero-gray-800: #2A2926;
+  --color-si-cream: #FAF8F5;
+  --color-si-black: #0F0F0F;
+  --color-si-gold: #C8A96E;
+  --color-si-gold-light: #E8D5B0;
+  --color-si-gold-dark: #A07840;
+  --color-si-gray-50: #FAFAF8;
+  --color-si-gray-100: #F5F3F0;
+  --color-si-gray-200: #E8E5E0;
+  --color-si-gray-400: #9B9892;
+  --color-si-gray-600: #5C5A56;
+  --color-si-gray-800: #2A2926;
   --font-sans: var(--font-inter), 'Helvetica Neue', sans-serif;
   --font-serif: var(--font-cormorant), 'Georgia', serif;
 }
@@ -25,40 +25,40 @@ html {
 }
 
 body {
-  background: var(--color-vero-cream);
-  color: var(--color-vero-black);
+  background: var(--color-si-cream);
+  color: var(--color-si-black);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 /* Gold underline animation */
-.vero-link {
+.si-link {
   position: relative;
   text-decoration: none;
 }
-.vero-link::after {
+.si-link::after {
   content: '';
   position: absolute;
   bottom: -2px;
   left: 0;
   width: 0;
   height: 1px;
-  background: var(--color-vero-gold);
+  background: var(--color-si-gold);
   transition: width 0.3s ease;
 }
-.vero-link:hover::after {
+.si-link:hover::after {
   width: 100%;
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: var(--color-vero-gray-100); }
-::-webkit-scrollbar-thumb { background: var(--color-vero-gray-400); border-radius: 3px; }
+::-webkit-scrollbar-track { background: var(--color-si-gray-100); }
+::-webkit-scrollbar-thumb { background: var(--color-si-gray-400); border-radius: 3px; }
 
 /* Focus */
 :focus-visible {
-  outline: 2px solid var(--color-vero-gold);
+  outline: 2px solid var(--color-si-gold);
   outline-offset: 2px;
 }
 
@@ -94,5 +94,5 @@ body {
   display: block;
   width: 48px;
   height: 1px;
-  background: var(--color-vero-gold);
+  background: var(--color-si-gold);
 }

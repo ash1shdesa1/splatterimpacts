@@ -137,7 +137,7 @@ export default async function ProductPage({ params }: Props) {
                 { icon: '📦', text: 'Complimentary shipping on all orders over $200' },
                 { icon: '↩', text: 'Free returns within 30 days' },
                 { icon: '🔒', text: 'Secure checkout via Stripe' },
-                { icon: '💬', text: 'Questions? Email contact@the-vero.com' },
+                { icon: '💬', text: 'Questions? Email contact@splatterimpacts.com' },
               ].map(({ icon, text }) => (
                 <div key={text} className="flex items-center gap-3 text-[12px] text-[#9B9892]">
                   <span>{icon}</span>

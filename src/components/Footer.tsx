@@ -8,7 +8,7 @@ export default function Footer() {
         {/* Brand */}
         <div className="col-span-2 md:col-span-1">
           <Link href="/" className="font-[var(--font-cormorant)] text-2xl tracking-[0.35em] uppercase font-light">
-            VERO
+            Splatter Impacts
           </Link>
           <p className="mt-4 text-[12px] text-white/40 leading-relaxed max-w-[200px]">
             Every jewel, a chapter. Every chapter, your story.
@@ -92,11 +92,11 @@ export default function Footer() {
           </ul>
           <div className="mt-6">
             <a
-              href="mailto:contact@the-vero.com"
+              href="mailto:contact@splatterimpacts.com"
               className="text-[12px] text-white/50 hover:text-[#C8A96E] transition-colors"
             >
               {/* PLACEHOLDER: Update this email address */}
-              contact@the-vero.com
+              contact@splatterimpacts.com
             </a>
           </div>
         </div>
@@ -106,7 +106,7 @@ export default function Footer() {
       <div className="border-t border-white/10 px-6 md:px-10 py-6">
         <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-[11px] text-white/25 tracking-wide">
-            © {new Date().getFullYear()} VERO. All rights reserved.
+            © {new Date().getFullYear()} Splatter Impacts. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             {[

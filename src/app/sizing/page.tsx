@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Ring Sizing Guide',
-  description: 'Find your perfect ring size with the VERO sizing guide.',
+  description: 'Find your perfect ring size with the Splatter Impacts sizing guide.',
 }
 
 const SIZES = [
@@ -105,7 +105,7 @@ export default function SizingPage() {
               'Avoid measuring when you are cold — fingers are smaller in cold temperatures.',
               'For wider bands, consider going up half a size.',
               'If you are between sizes, we recommend sizing up for comfort.',
-              'Complimentary sizing is available for all VERO rings within 30 days.',
+              'Complimentary sizing is available for all Splatter Impacts rings within 30 days.',
             ].map((tip) => (
               <li key={tip} className="flex items-start gap-3 text-[13px] text-[#5C5A56]">
                 <span className="w-1 h-1 rounded-full bg-[#C8A96E] mt-2 flex-shrink-0" />
@@ -117,8 +117,8 @@ export default function SizingPage() {
 
         <p className="text-[13px] text-[#9B9892] text-center">
           Still unsure? Email us at{' '}
-          <a href="mailto:contact@the-vero.com" className="text-[#C8A96E] hover:underline">
-            contact@the-vero.com
+          <a href="mailto:contact@splatterimpacts.com" className="text-[#C8A96E] hover:underline">
+            contact@splatterimpacts.com
           </a>{' '}
           and we will help you find the perfect fit.
         </p>

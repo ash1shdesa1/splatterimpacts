@@ -24,7 +24,7 @@ function resolveLineItems(lines: CartLine[]) {
         product_data: {
           name: product.title,
           images: [product.image],
-          description: `VERO Fine Jewelry — ${product.title}`,
+          description: `Splatter Impacts Fine Jewelry — ${product.title}`,
         },
       },
       quantity: qty,
@@ -84,7 +84,7 @@ export async function POST(req: NextRequest) {
       allow_promotion_codes: true,
       success_url: `${siteUrl}/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${siteUrl}/checkout`,
-      metadata: { source: 'vero-website' },
+      metadata: { source: 'splatterimpacts-website' },
     })
 
     return NextResponse.json({ url: session.url })

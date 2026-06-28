@@ -176,7 +176,7 @@ export const PRODUCTS: Product[] = [
     inStock: true,
     image: IMG.earring_drop,
     images: [IMG.earring_drop, IMG.earring_diamond_drop],
-    description: 'Turn heads and ignite conversation with these captivating Ruby Drop Earrings. Crafted in 14K yellow gold, a diamond-set bale suspends a luminous natural ruby drop for a look that is bold, beautiful, and unmistakably Vero.',
+    description: 'Turn heads and ignite conversation with these captivating Ruby Drop Earrings. Crafted in 14K yellow gold, a diamond-set bale suspends a luminous natural ruby drop for a look that is bold, beautiful, and unmistakably Splatter Impacts.',
     details: ['14K Yellow Gold', 'Natural ruby drops', 'Diamond-set bale', 'Lever-back closures', 'Certificate of gemstone quality'],
   },
   {

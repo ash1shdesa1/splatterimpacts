@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Our Story',
-  description: 'The story of VERO — jewelry born from belief, beauty shaped by purpose, pieces made to be lived in.',
+  description: 'The story of Splatter Impacts — jewelry born from belief, beauty shaped by purpose, pieces made to be lived in.',
 }
 
 export default function AboutPage() {
@@ -14,7 +14,7 @@ export default function AboutPage() {
       <div className="relative h-[55vh] min-h-[380px] overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=2000&q=90"
-          alt="The story of VERO"
+          alt="The story of Splatter Impacts"
           fill
           className="object-cover"
           priority
@@ -24,7 +24,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
           <p className="text-[10px] tracking-[0.35em] uppercase opacity-70 mb-4">The Story</p>
           <h1 className="font-[var(--font-cormorant)] text-5xl md:text-6xl font-light tracking-widest uppercase">
-            The Story of Vero
+            The Story of Splatter Impacts
           </h1>
           <span className="gold-line mt-5 mx-auto" />
         </div>
@@ -51,7 +51,7 @@ export default function AboutPage() {
 
             <div className="space-y-5 text-[14px] text-[#5C5A56] leading-[1.95]">
               <p>
-                Vero was born from a simple belief: that jewelry should be more than an accessory.
+                Splatter Impacts was born from a simple belief: that jewelry should be more than an accessory.
                 It should be a reflection of a person's story — a piece that captures moments and
                 transforms them into timeless treasures.
               </p>
@@ -63,7 +63,7 @@ export default function AboutPage() {
               </p>
               <p>
                 Each piece is handcrafted with precision, a dance between gold, diamonds, and a
-                designer's intuition. At Vero, we work quietly, patiently, ensuring every jewel
+                designer's intuition. At Splatter Impacts, we work quietly, patiently, ensuring every jewel
                 leaves the workshop imbued with emotion and craftsmanship.
               </p>
               <p>
@@ -78,7 +78,7 @@ export default function AboutPage() {
             <div className="relative aspect-[4/5] overflow-hidden img-zoom-wrapper">
               <Image
                 src="https://images.unsplash.com/photo-1563291074-2bf8677ac0e5?auto=format&fit=crop&w=800&q=90"
-                alt="VERO design process"
+                alt="Splatter Impacts design process"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -94,7 +94,7 @@ export default function AboutPage() {
           <div className="relative aspect-[4/5] overflow-hidden img-zoom-wrapper">
             <Image
               src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=90"
-              alt="VERO diamond jewelry"
+              alt="Splatter Impacts diamond jewelry"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -108,19 +108,19 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-5 text-[14px] text-[#5C5A56] leading-[1.95]">
               <p>
-                People come to Vero to find more than jewelry; they come to find themselves. A woman
+                People come to Splatter Impacts to find more than jewelry; they come to find themselves. A woman
                 searching for a gift for her daughter, a man seeking the perfect symbol of a promise,
                 a couple choosing rings that would define their union — every piece becomes part of a
                 larger story.
               </p>
               <p>
-                Today, Vero shines not just for its beauty, but for its belief that true elegance is
+                Today, Splatter Impacts shines not just for its beauty, but for its belief that true elegance is
                 timeless, quiet, and deeply personal. It is a brand for those who value craftsmanship,
                 who seek beauty with a purpose, and who understand that the best designs are those that
                 connect hearts across moments and generations.
               </p>
               <p className="font-[var(--font-cormorant)] text-lg italic text-[#0F0F0F]">
-                At Vero, every jewel is a chapter. And every chapter is an invitation to tell your story.
+                At Splatter Impacts, every jewel is a chapter. And every chapter is an invitation to tell your story.
               </p>
             </div>
           </div>
@@ -148,7 +148,7 @@ export default function AboutPage() {
               },
               {
                 title: 'Legacy',
-                desc: 'We design for the long arc of a life. Every Vero piece is made to be passed down, cherished across generations, and grow more meaningful with time.',
+                desc: 'We design for the long arc of a life. Every Splatter Impacts piece is made to be passed down, cherished across generations, and grow more meaningful with time.',
               },
             ].map((v) => (
               <div key={v.title} className="space-y-5">

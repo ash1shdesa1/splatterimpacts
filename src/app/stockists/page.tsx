@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Stockists',
-  description: 'Find VERO fine jewelry at select retailers near you.',
+  description: 'Find Splatter Impacts fine jewelry at select retailers near you.',
 }
 
 export default function StockistsPage() {
@@ -15,7 +15,7 @@ export default function StockistsPage() {
         </h1>
         <span className="gold-line mt-5 mx-auto block" />
         <p className="mt-5 text-[14px] text-[#5C5A56] max-w-[420px] mx-auto leading-relaxed">
-          Find VERO at select fine jewelry retailers and boutiques.
+          Find Splatter Impacts at select fine jewelry retailers and boutiques.
         </p>
       </div>
 
@@ -70,7 +70,7 @@ export default function StockistsPage() {
 
         <div className="mt-16 p-8 bg-[#F5F3F0] text-center">
           <h3 className="font-[var(--font-cormorant)] text-2xl font-light mb-3">
-            Interested in Carrying VERO?
+            Interested in Carrying Splatter Impacts?
           </h3>
           <p className="text-[13px] text-[#5C5A56] mb-5">
             We partner with select fine jewelry retailers who share our commitment to quality and craftsmanship.

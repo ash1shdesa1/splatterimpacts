@@ -5,7 +5,7 @@ const FIRST_SLUG = 'diamond-pave-bangle'
 // Clear persisted cart before each test so they don't bleed into each other
 test.beforeEach(async ({ page }) => {
   await page.goto('/')
-  await page.evaluate(() => localStorage.removeItem('vero-cart'))
+  await page.evaluate(() => localStorage.removeItem('splatterimpacts-cart'))
 })
 
 async function addFirstProductToCart(page: any) {

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Terms of Service',
-  description: 'Terms of Service for VERO Fine Jewelry.',
+  description: 'Terms of Service for Splatter Impacts Fine Jewelry.',
   robots: { index: false },
 }
 
@@ -24,7 +24,7 @@ export default function TermsPage() {
         {[
           {
             title: '1. Agreement to Terms',
-            body: 'By accessing or purchasing from the-vero.com ("Site"), you agree to be bound by these Terms of Service. If you do not agree, please do not use the Site.',
+            body: 'By accessing or purchasing from splatterimpacts.com ("Site"), you agree to be bound by these Terms of Service. If you do not agree, please do not use the Site.',
           },
           {
             title: '2. Products',
@@ -48,7 +48,7 @@ export default function TermsPage() {
           },
           {
             title: '7. Intellectual Property',
-            body: 'All content on this Site — including images, text, logos, and designs — is the property of VERO and protected by applicable copyright and trademark laws. You may not reproduce, distribute, or create derivative works without our express written permission.',
+            body: 'All content on this Site — including images, text, logos, and designs — is the property of Splatter Impacts and protected by applicable copyright and trademark laws. You may not reproduce, distribute, or create derivative works without our express written permission.',
           },
           {
             title: '8. Disclaimer of Warranties',
@@ -56,7 +56,7 @@ export default function TermsPage() {
           },
           {
             title: '9. Limitation of Liability',
-            body: 'To the fullest extent permitted by law, VERO shall not be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with your use of the Site or purchase of products, even if we have been advised of the possibility of such damages. Our total liability shall not exceed the amount you paid for the relevant order.',
+            body: 'To the fullest extent permitted by law, Splatter Impacts shall not be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with your use of the Site or purchase of products, even if we have been advised of the possibility of such damages. Our total liability shall not exceed the amount you paid for the relevant order.',
           },
           {
             title: '10. Governing Law',
@@ -80,8 +80,8 @@ export default function TermsPage() {
             ) : (
               <p className="text-[13px] text-[#5C5A56] leading-relaxed">
                 For questions about these Terms, please contact us at{' '}
-                <a href="mailto:contact@the-vero.com" className="text-[#C8A96E] hover:underline">
-                  contact@the-vero.com
+                <a href="mailto:contact@splatterimpacts.com" className="text-[#C8A96E] hover:underline">
+                  contact@splatterimpacts.com
                 </a>{' '}
                 or visit our{' '}
                 <Link href="/contact" className="text-[#C8A96E] hover:underline">

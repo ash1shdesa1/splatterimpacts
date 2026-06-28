@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Get in touch with VERO. We would love to hear from you — whether you have a question about a piece, need help finding the perfect gift, or want to share your story.',
+  description: 'Get in touch with Splatter Impacts. We would love to hear from you — whether you have a question about a piece, need help finding the perfect gift, or want to share your story.',
 }
 
 export default function ContactPage() {
@@ -30,23 +30,23 @@ export default function ContactPage() {
             {[
               {
                 title: 'Customer Service',
-                detail: 'contact@the-vero.com',
+                detail: 'contact@splatterimpacts.com',
                 /* PLACEHOLDER: Update this email address */
-                href: 'mailto:contact@the-vero.com',
+                href: 'mailto:contact@splatterimpacts.com',
                 desc: 'Questions about orders, products, or anything else.',
               },
               {
                 title: 'Wholesale Inquiries',
-                detail: 'contact@the-vero.com',
+                detail: 'contact@splatterimpacts.com',
                 /* PLACEHOLDER: Add a dedicated wholesale email */
-                href: 'mailto:contact@the-vero.com',
-                desc: 'Interested in carrying VERO in your store? We would love to connect.',
+                href: 'mailto:contact@splatterimpacts.com',
+                desc: 'Interested in carrying Splatter Impacts in your store? We would love to connect.',
               },
               {
                 title: 'Press & Media',
-                detail: 'contact@the-vero.com',
+                detail: 'contact@splatterimpacts.com',
                 /* PLACEHOLDER: Add a dedicated press email */
-                href: 'mailto:contact@the-vero.com',
+                href: 'mailto:contact@splatterimpacts.com',
                 desc: 'Editorial requests, features, and collaboration opportunities.',
               },
               {

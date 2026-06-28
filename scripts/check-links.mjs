@@ -2,10 +2,10 @@
 /**
  * Link checker — crawls the site and reports broken internal links.
  * Usage: node scripts/check-links.mjs [BASE_URL]
- * Defaults to https://the-vero.com when no argument is supplied.
+ * Defaults to https://splatterimpacts.com when no argument is supplied.
  */
 
-const BASE_URL = (process.argv[2] || 'https://the-vero.com').replace(/\/$/, '')
+const BASE_URL = (process.argv[2] || 'https://splatterimpacts.com').replace(/\/$/, '')
 const CONCURRENCY = 5
 const TIMEOUT_MS = 10_000
 

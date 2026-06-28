@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Journal',
-  description: 'Stories, inspiration, and behind-the-scenes from VERO Fine Jewelry.',
+  description: 'Stories, inspiration, and behind-the-scenes from Splatter Impacts Fine Jewelry.',
 }
 
 const JOURNAL_POSTS = [

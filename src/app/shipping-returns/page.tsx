@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Shipping & Returns',
-  description: 'VERO shipping and return policies. Free shipping on orders over $200.',
+  description: 'Splatter Impacts shipping and return policies. Free shipping on orders over $200.',
 }
 
 export default function ShippingReturnsPage() {
@@ -33,7 +33,7 @@ export default function ShippingReturnsPage() {
             content: [
               { q: '30-Day Returns', a: 'We accept returns within 30 days of delivery. Items must be unworn, in original condition, and in original packaging.' },
               { q: 'Free Return Shipping', a: 'Returns are complimentary. A prepaid return label will be emailed to you upon initiating your return.' },
-              { q: 'How to Initiate a Return', a: 'Email contact@the-vero.com with your order number and reason for return. We will respond within 1 business day.' },
+              { q: 'How to Initiate a Return', a: 'Email contact@splatterimpacts.com with your order number and reason for return. We will respond within 1 business day.' },
               { q: 'Refunds', a: 'Refunds are processed within 5–7 business days of receiving your return. Credit will be applied to your original payment method.' },
               { q: 'Final Sale Items', a: 'Custom orders and personalized pieces are final sale and are not eligible for return.' },
             ],
@@ -65,9 +65,9 @@ export default function ShippingReturnsPage() {
           <p className="text-[13px] text-[#9B9892]">
             Questions? We are here to help.{' '}
             <Link href="/contact" className="text-[#C8A96E] hover:underline">Contact us</Link> or email{' '}
-            <a href="mailto:contact@the-vero.com" className="text-[#C8A96E] hover:underline">
+            <a href="mailto:contact@splatterimpacts.com" className="text-[#C8A96E] hover:underline">
               {/* PLACEHOLDER: Update this email address */}
-              contact@the-vero.com
+              contact@splatterimpacts.com
             </a>
           </p>
         </div>

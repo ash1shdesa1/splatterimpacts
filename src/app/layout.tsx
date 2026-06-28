@@ -21,8 +21,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'VERO — Fine Jewelry',
-    template: '%s — VERO',
+    default: 'Splatter Impacts — Fine Jewelry',
+    template: '%s — Splatter Impacts',
   },
   description:
     'Handcrafted fine jewelry born from belief. Rings, necklaces, earrings, and bracelets made to become part of your story.',
@@ -30,14 +30,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://www.the-vero.com',
-    siteName: 'VERO',
-    title: 'VERO — Fine Jewelry',
+    url: 'https://www.splatterimpacts.com',
+    siteName: 'Splatter Impacts',
+    title: 'Splatter Impacts — Fine Jewelry',
     description: 'Handcrafted fine jewelry. Every jewel, a chapter.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'VERO — Fine Jewelry',
+    title: 'Splatter Impacts — Fine Jewelry',
     description: 'Handcrafted fine jewelry. Every jewel, a chapter.',
   },
   robots: {
@@ -53,7 +53,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
-      <body className="min-h-screen flex flex-col bg-vero-cream text-vero-black antialiased">
+      <body className="min-h-screen flex flex-col bg-si-cream text-si-black antialiased">
         <Navigation />
         <CartDrawer />
         <main className="flex-1">{children}</main>

@@ -68,7 +68,7 @@ Key architectural and product decisions, in reverse-chronological order.
 
 ## 2026-06-19 — Zustand + persist for cart state
 
-**Decision:** Cart state lives in Zustand with the `persist` middleware, stored in `localStorage` under the key `vero-cart`. Only `items` is persisted (not `isOpen` or computed values).
+**Decision:** Cart state lives in Zustand with the `persist` middleware, stored in `localStorage` under the key `splatterimpacts-cart`. Only `items` is persisted (not `isOpen` or computed values).
 
 **Why:** Simple, no backend required for cart. Survives page refreshes and tab closes. No server-side session management needed for a catalog of this size.
 

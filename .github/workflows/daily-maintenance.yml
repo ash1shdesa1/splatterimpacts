@@ -65,7 +65,7 @@ jobs:
         with:
           node-version: '24'
       - name: Check live site links
-        run: node scripts/check-links.mjs https://the-vero.com
+        run: node scripts/check-links.mjs https://splatterimpacts.com
 
   # ── 4. Netlify build health ──────────────────────────────────────────
   netlify:

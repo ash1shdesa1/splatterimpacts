@@ -46,10 +46,10 @@ export async function POST(req: NextRequest) {
     // import { Resend } from 'resend'
     // const resend = new Resend(process.env.RESEND_API_KEY)
     // await resend.emails.send({
-    //   from: process.env.EMAIL_FROM!,          // e.g. 'VERO <noreply@the-vero.com>'
-    //   to: process.env.EMAIL_TO!,              // e.g. 'contact@the-vero.com'
+    //   from: process.env.EMAIL_FROM!,          // e.g. 'Splatter Impacts <noreply@splatterimpacts.com>'
+    //   to: process.env.EMAIL_TO!,              // e.g. 'contact@splatterimpacts.com'
     //   replyTo: email,
-    //   subject: `VERO Contact — ${subject || 'General Inquiry'}`,
+    //   subject: `Splatter Impacts Contact — ${subject || 'General Inquiry'}`,
     //   text: `From: ${firstName} ${lastName} <${email}>\n\n${message}`,
     // })
 

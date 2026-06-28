@@ -31,7 +31,7 @@ export default function HomePage() {
         */}
         <Image
           src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=2400&q=90"
-          alt="VERO Fine Jewelry — The Signature Collection"
+          alt="Splatter Impacts Fine Jewelry — The Signature Collection"
           fill
           className="object-cover"
           priority
@@ -88,7 +88,7 @@ export default function HomePage() {
             <div className="relative aspect-[3/4] overflow-hidden img-zoom-wrapper">
               <Image
                 src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=90"
-                alt="VERO craftsmanship"
+                alt="Splatter Impacts craftsmanship"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 50vw, 25vw"
@@ -97,7 +97,7 @@ export default function HomePage() {
             <div className="relative aspect-[3/4] overflow-hidden img-zoom-wrapper mt-10">
               <Image
                 src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=90"
-                alt="VERO diamond ring"
+                alt="Splatter Impacts diamond ring"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 50vw, 25vw"
@@ -114,7 +114,7 @@ export default function HomePage() {
             </h2>
             <span className="gold-line mb-6 block" />
             <p className="text-[14px] text-[#5C5A56] leading-[1.9] mb-4">
-              Vero was born from a simple belief: that jewelry should be more than an accessory.
+              Splatter Impacts was born from a simple belief: that jewelry should be more than an accessory.
               It should be a reflection of a person's story — a piece that captures moments and
               transforms them into timeless treasures.
             </p>
@@ -187,7 +187,7 @@ export default function HomePage() {
       <section className="relative h-[55vh] min-h-[380px] overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1563291074-2bf8677ac0e5?auto=format&fit=crop&w=2000&q=90"
-          alt="VERO — Commission your story"
+          alt="Splatter Impacts — Commission your story"
           fill
           className="object-cover"
           sizes="100vw"
@@ -272,7 +272,7 @@ export default function HomePage() {
               >
                 <Image
                   src={src}
-                  alt="VERO on Instagram"
+                  alt="Splatter Impacts on Instagram"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                   sizes="(max-width: 768px) 33vw, 16vw"

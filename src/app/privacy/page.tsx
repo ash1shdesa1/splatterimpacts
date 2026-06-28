@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'Privacy Policy for VERO Fine Jewelry.',
+  description: 'Privacy Policy for Splatter Impacts Fine Jewelry.',
   robots: { index: false },
 }
 
@@ -48,7 +48,7 @@ export default function PrivacyPage() {
           },
           {
             title: '7. Your Rights',
-            body: 'Depending on your location, you may have the right to access, correct, or delete the personal information we hold about you. You may also have the right to opt out of marketing communications at any time using the unsubscribe link in any email we send. To exercise any of these rights, contact us at contact@the-vero.com.',
+            body: 'Depending on your location, you may have the right to access, correct, or delete the personal information we hold about you. You may also have the right to opt out of marketing communications at any time using the unsubscribe link in any email we send. To exercise any of these rights, contact us at contact@splatterimpacts.com.',
           },
           {
             title: '8. Children\'s Privacy',
@@ -76,8 +76,8 @@ export default function PrivacyPage() {
             ) : (
               <p className="text-[13px] text-[#5C5A56] leading-relaxed">
                 For questions or requests related to your personal data, contact us at{' '}
-                <a href="mailto:contact@the-vero.com" className="text-[#C8A96E] hover:underline">
-                  contact@the-vero.com
+                <a href="mailto:contact@splatterimpacts.com" className="text-[#C8A96E] hover:underline">
+                  contact@splatterimpacts.com
                 </a>{' '}
                 or visit our{' '}
                 <Link href="/contact" className="text-[#C8A96E] hover:underline">

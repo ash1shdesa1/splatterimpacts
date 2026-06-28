@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Jewelry Care',
-  description: 'How to care for your VERO fine jewelry so it lasts a lifetime.',
+  description: 'How to care for your Splatter Impacts fine jewelry so it lasts a lifetime.',
 }
 
 export default function CarePage() {
@@ -66,7 +66,7 @@ export default function CarePage() {
             items: [
               {
                 q: 'Store pieces separately',
-                a: 'Jewelry should be stored individually to prevent scratching. Use the pouch or box your VERO piece arrived in, or a fabric-lined jewelry box with separate compartments.',
+                a: 'Jewelry should be stored individually to prevent scratching. Use the pouch or box your Splatter Impacts piece arrived in, or a fabric-lined jewelry box with separate compartments.',
               },
               {
                 q: 'Keep away from sunlight and heat',

@@ -3,7 +3,7 @@ import ShopContent from './ShopContent'
 
 export const metadata = {
   title: 'Shop',
-  description: 'Explore VERO Fine Jewelry — rings, necklaces, earrings, bracelets, and bespoke pieces.',
+  description: 'Explore Splatter Impacts Fine Jewelry — rings, necklaces, earrings, bracelets, and bespoke pieces.',
 }
 
 export default function ShopPage() {

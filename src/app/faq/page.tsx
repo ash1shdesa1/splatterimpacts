@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'FAQ',
-  description: 'Answers to the most common questions about VERO Fine Jewelry — ordering, shipping, returns, and more.',
+  description: 'Answers to the most common questions about Splatter Impacts Fine Jewelry — ordering, shipping, returns, and more.',
 }
 
 const SECTIONS = [
@@ -16,15 +16,15 @@ const SECTIONS = [
       },
       {
         q: 'Can I modify or cancel my order?',
-        a: 'Orders can be modified or cancelled within 1 hour of placement. Please email contact@the-vero.com as soon as possible with your order number. Once an order has been prepared for shipping, we are unable to make changes.',
+        a: 'Orders can be modified or cancelled within 1 hour of placement. Please email contact@splatterimpacts.com as soon as possible with your order number. Once an order has been prepared for shipping, we are unable to make changes.',
       },
       {
         q: 'Do you offer gift wrapping?',
-        a: 'Every VERO order arrives in our signature packaging — a keepsake box with a ribbon, tissue paper, and a care card. This is included at no extra charge and requires no selection at checkout.',
+        a: 'Every Splatter Impacts order arrives in our signature packaging — a keepsake box with a ribbon, tissue paper, and a care card. This is included at no extra charge and requires no selection at checkout.',
       },
       {
         q: 'Do you offer gift cards?',
-        a: 'Gift cards are coming soon. In the meantime, please reach out to us directly at contact@the-vero.com and we will arrange something special.',
+        a: 'Gift cards are coming soon. In the meantime, please reach out to us directly at contact@splatterimpacts.com and we will arrange something special.',
       },
     ],
   },
@@ -58,7 +58,7 @@ const SECTIONS = [
       },
       {
         q: 'How do I start a return?',
-        a: 'Email contact@the-vero.com with your order number and reason for return. We will send a prepaid return label within one business day.',
+        a: 'Email contact@splatterimpacts.com with your order number and reason for return. We will send a prepaid return label within one business day.',
       },
       {
         q: 'When will I receive my refund?',
@@ -148,8 +148,8 @@ export default function FAQPage() {
               Contact us
             </Link>{' '}
             or email{' '}
-            <a href="mailto:contact@the-vero.com" className="text-[#C8A96E] hover:underline">
-              contact@the-vero.com
+            <a href="mailto:contact@splatterimpacts.com" className="text-[#C8A96E] hover:underline">
+              contact@splatterimpacts.com
             </a>
           </p>
         </div>
