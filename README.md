@@ -114,12 +114,19 @@ Config in `netlify.toml` is ready. Steps to go live:
    STRIPE_WEBHOOK_SECRET=whsec_...
    NEXT_PUBLIC_SITE_URL=https://www.splatterimpacts.com
    ```
-4. Connect domain `splatterimpacts.com` in Netlify → Domain Management
-5. Add DNS records at your registrar:
-   ```
-   A     @    75.2.60.5
-   CNAME www  [your-site].netlify.app
-   ```
+4. Connect domain `splatterimpacts.com` in Netlify → Domain Management (Netlify will show the exact `[your-site].netlify.app` target)
+5. **DNS is hosted at GoDaddy.** Keep GoDaddy's nameservers and manage records in
+   GoDaddy → **My Products → splatterimpacts.com → DNS (Manage DNS)**. Add/edit:
+
+   | Type  | Name | Value                       | TTL    |
+   |-------|------|-----------------------------|--------|
+   | A     | @    | `75.2.60.5`                 | 1 hr   |
+   | CNAME | www  | `[your-site].netlify.app`   | 1 hr   |
+
+   - Delete GoDaddy's default "parked" A record on `@` (and the `www` CNAME to
+     parking) so they don't conflict.
+   - GoDaddy can't CNAME the apex, so the apex uses Netlify's A record `75.2.60.5`.
+   - Propagation usually completes within an hour. Verify with `dig splatterimpacts.com +short`.
 6. Create Stripe webhook → `https://www.splatterimpacts.com/api/webhooks`, event: `checkout.session.completed`
 
 ---
