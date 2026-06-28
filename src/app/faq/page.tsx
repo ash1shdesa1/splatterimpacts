@@ -12,7 +12,7 @@ const SECTIONS = [
     items: [
       {
         q: 'How do I place an order?',
-        a: 'Browse the shop, add targets to your cart, and check out. We accept all major credit cards securely via Stripe, and you will get an order confirmation email right away.',
+        a: 'Browse the shop, add targets to your cart, and check out. Payment is handled securely by Shopify, which accepts all major credit cards, and you will get an order confirmation email right away.',
       },
       {
         q: 'Can I modify or cancel my order?',

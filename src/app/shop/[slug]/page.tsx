@@ -136,7 +136,7 @@ export default async function ProductPage({ params }: Props) {
               {[
                 { icon: '📦', text: 'Free shipping on all orders over $99' },
                 { icon: '↩', text: 'Free returns within 30 days' },
-                { icon: '🔒', text: 'Secure checkout via Stripe' },
+                { icon: '🔒', text: 'Secure checkout via Shopify' },
                 { icon: '💬', text: 'Questions? Email contact@splatterimpacts.com' },
               ].map(({ icon, text }) => (
                 <div key={text} className="flex items-center gap-3 text-[12px] text-[#8A9099]">

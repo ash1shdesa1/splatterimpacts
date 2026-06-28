@@ -4,8 +4,8 @@
 // Configuration is read from environment variables. See `.env.example`
 // for the placeholders that must be filled in to enable Shopify. When
 // the env is not configured, `isShopifyConfigured()` returns false and
-// the app falls back to the existing Stripe Checkout flow — so nothing
-// breaks before Shopify is set up.
+// the checkout route responds with a clear 503 (no payment can be taken
+// until Shopify is set up).
 // ─────────────────────────────────────────────────────────────
 
 const STORE_DOMAIN = process.env.SHOPIFY_STORE_DOMAIN // e.g. your-store.myshopify.com

@@ -32,7 +32,7 @@ export default function TermsPage() {
           },
           {
             title: '3. Pricing & Payment',
-            body: 'All prices are listed in US Dollars and are subject to change. We reserve the right to correct pricing errors at any time, even after an order has been placed. Payment is processed securely through Stripe. We accept all major credit cards.',
+            body: 'All prices are listed in US Dollars and are subject to change. We reserve the right to correct pricing errors at any time, even after an order has been placed. Payment is processed securely through Shopify. We accept all major credit cards.',
           },
           {
             title: '4. Order Acceptance',

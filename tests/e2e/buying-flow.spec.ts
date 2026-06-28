@@ -58,8 +58,8 @@ test.describe('Buying workflow', () => {
     await expect(page.getByRole('button', { name: /secure checkout/i })).toBeVisible()
   })
 
-  test('checkout button calls /api/checkout and redirects to Stripe', async ({ page }) => {
-    // Intercept the Stripe session creation so no real key is needed
+  test('checkout button calls /api/checkout and redirects to hosted checkout', async ({ page }) => {
+    // Intercept checkout creation so no real Shopify store is needed
     await page.route('/api/checkout', async (route) => {
       const body = await route.request().postDataJSON()
       // Verify the request body shape

@@ -24,7 +24,7 @@ export default function PrivacyPage() {
         {[
           {
             title: '1. Information We Collect',
-            body: 'When you place an order, we collect your name, email address, shipping address, phone number, and payment information. Payment details are processed directly by Stripe and are never stored on our servers. We may also collect browsing data (pages visited, time on site) through analytics tools to improve the shopping experience.',
+            body: 'When you place an order, we collect your name, email address, shipping address, phone number, and payment information. Payment details are processed directly by Shopify and are never stored on our servers. We may also collect browsing data (pages visited, time on site) through analytics tools to improve the shopping experience.',
           },
           {
             title: '2. How We Use Your Information',
@@ -32,7 +32,7 @@ export default function PrivacyPage() {
           },
           {
             title: '3. Sharing Your Information',
-            body: 'We share your information only with service providers necessary to fulfill your order — including our payment processor (Stripe), shipping carriers, and email service providers. These parties are contractually obligated to protect your information and use it only for the purpose of providing their services to us.',
+            body: 'We share your information only with service providers necessary to fulfill your order — including our payment processor (Shopify), shipping carriers, and email service providers. These parties are contractually obligated to protect your information and use it only for the purpose of providing their services to us.',
           },
           {
             title: '4. Cookies & Tracking',
@@ -40,7 +40,7 @@ export default function PrivacyPage() {
           },
           {
             title: '5. Data Security',
-            body: 'We implement industry-standard security measures to protect your personal information. Our site is served over HTTPS. Payment processing is handled by Stripe, which is PCI DSS compliant. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.',
+            body: 'We implement industry-standard security measures to protect your personal information. Our site is served over HTTPS. Payment processing is handled by Shopify, which is PCI DSS compliant. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.',
           },
           {
             title: '6. Data Retention',

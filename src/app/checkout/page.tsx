@@ -141,7 +141,7 @@ export default function CheckoutPage() {
                 <rect x="1" y="6" width="10" height="7" rx="1" />
                 <path d="M3.5 6V4a2.5 2.5 0 015 0v2" />
               </svg>
-              Secured by Stripe
+              Secured by Shopify
             </div>
 
             <div className="mt-4 flex items-center justify-center gap-2">

@@ -9,6 +9,22 @@ Key architectural and product decisions, in reverse-chronological order.
 
 ---
 
+## 2026-06-28 — Removed Stripe; Shopify is the sole checkout
+
+**Decision:** Removed Stripe entirely — the `stripe`, `@stripe/stripe-js`, and
+`@stripe/react-stripe-js` packages, `src/lib/stripe.ts`, the Stripe webhook route
+(`/api/webhooks`), Stripe env vars, and Stripe domains in the CSP. Checkout now
+goes only through Shopify; `/api/checkout` returns a `503` until Shopify is
+configured.
+
+**Why:** Consolidate payments on Shopify. Stripe's fallback path is no longer
+needed now that Shopify is the chosen backend.
+
+**Note:** The earlier 2026-06-19 entries describing Stripe Checkout are historical
+and superseded by this decision.
+
+---
+
 ## 2026-06-28 — Provider-agnostic checkout with Shopify integration
 
 **Decision:** Added a Shopify Storefront API integration (`src/lib/shopify.ts`)
@@ -170,8 +186,8 @@ design tokens — and wired the repo to `github.com/ash1shdesa1/splatterimpacts`
 
 ## Open Questions / Deferred Decisions
 
-- **Cart clear after payment** — Should the success page read the Stripe session and clear the cart client-side? Or should we wire up the webhook + some server-push mechanism? Leaning toward: success page reads `session_id` from the query param, calls Stripe to verify payment, then calls `clearCart()`.
-- **Checkout page vs. direct-to-Stripe** — The `/checkout` review page is redundant friction. Options: (a) remove it and send users directly from cart drawer to Stripe, or (b) replace it with a pre-checkout form that captures email/shipping before Stripe. Decision pending.
-- **Size/variant selection** — No ring size or bracelet length picker exists. For a real sales flow, this is a blocker for rings. Needs to be added before launch.
+- **Cart clear after payment** — With Shopify's hosted checkout the order is placed off-site, so the local cart should be cleared when the buyer is sent to Shopify (or on return to the success page). Decision pending.
+- **Checkout page vs. direct-to-Shopify** — The `/checkout` review page is redundant friction. Options: (a) remove it and send users directly from the cart drawer to Shopify, or (b) keep it as a pre-checkout review. Decision pending.
+- **Variant/pack selection** — Products are single-variant. If targets gain options (pack size, steel thickness), an in-cart variant picker and per-variant `shopifyVariantId` mapping will be needed.
 - **Email on order** — `RESEND_API_KEY` is in `.env.example` but Resend is not wired up anywhere. Order confirmation emails don't send.
 - **Analytics** — `NEXT_PUBLIC_GA_MEASUREMENT_ID` slot exists in `.env.example` but GA is not connected.
