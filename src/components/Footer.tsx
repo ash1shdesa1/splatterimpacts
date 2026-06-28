@@ -11,11 +11,11 @@ export default function Footer() {
             Splatter Impacts
           </Link>
           <p className="mt-4 text-[12px] text-white/40 leading-relaxed max-w-[200px]">
-            Every jewel, a chapter. Every chapter, your story.
+            See every hit. Reactive targets and steel built for the range.
           </p>
           <div className="mt-6">
             <a
-              href="https://www.instagram.com/kingofstudsandsolitaire/"
+              href="https://www.instagram.com/splatterimpacts/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[11px] tracking-[0.18em] uppercase text-white/40 hover:text-[#C8A96E] transition-colors"
@@ -30,12 +30,12 @@ export default function Footer() {
           <h4 className="text-[10px] tracking-[0.25em] uppercase text-white/30 mb-5">Shop</h4>
           <ul className="space-y-3">
             {[
-              ['Rings', '/shop?category=rings'],
-              ['Necklaces', '/shop?category=necklaces'],
-              ['Earrings', '/shop?category=earrings'],
-              ['Bracelets', '/shop?category=bracelets'],
-              ['Fine Jewelry', '/shop?category=fine-jewelry'],
-              ['Custom Orders', '/shop?category=custom-orders'],
+              ['Splatter Targets', '/shop?category=splatter-targets'],
+              ['Paper Targets', '/shop?category=paper-targets'],
+              ['Steel Targets', '/shop?category=steel-targets'],
+              ['Reactive Targets', '/shop?category=reactive-targets'],
+              ['Stands & Frames', '/shop?category=target-stands'],
+              ['Accessories', '/shop?category=accessories'],
             ].map(([label, href]) => (
               <li key={href}>
                 <Link
@@ -76,8 +76,8 @@ export default function Footer() {
           <ul className="space-y-3">
             {[
               ['Shipping & Returns', '/shipping-returns'],
-              ['Ring Sizing Guide', '/sizing'],
-              ['Care Instructions', '/care'],
+              ['Target Sizing Guide', '/sizing'],
+              ['Range & Care Guide', '/care'],
               ['FAQ', '/faq'],
             ].map(([label, href]) => (
               <li key={href}>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-label="Adjustable target stand">
+  <rect width="600" height="800" fill="#0F0F0F"/>
+  <rect x="40" y="60" width="520" height="680" fill="#FAF8F5" rx="6"/>
+  <g stroke="#7A5C3A" stroke-width="22" stroke-linecap="round">
+    <line x1="200" y1="180" x2="200" y2="560"/>
+    <line x1="400" y1="180" x2="400" y2="560"/>
+  </g>
+  <rect x="150" y="560" width="300" height="22" rx="6" fill="#7A5C3A"/>
+  <rect x="120" y="582" width="120" height="20" rx="6" fill="#5C4427"/>
+  <rect x="360" y="582" width="120" height="20" rx="6" fill="#5C4427"/>
+  <rect x="170" y="150" width="260" height="190" fill="#FAF8F5" stroke="#111" stroke-width="3"/>
+  <g transform="translate(300,245)">
+    <circle r="74" fill="none" stroke="#111" stroke-width="3"/>
+    <circle r="46" fill="#111"/>
+    <circle r="20" fill="#E2231A"/>
+  </g>
+  <text x="300" y="700" text-anchor="middle" font-family="Georgia, serif" font-size="24" letter-spacing="5" fill="#0F0F0F">TARGET STAND</text>
+</svg>

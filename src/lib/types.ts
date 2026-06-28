@@ -1,12 +1,10 @@
 export type ProductCategory =
-  | 'rings'
-  | 'necklaces'
-  | 'earrings'
-  | 'bracelets'
-  | 'nose-rings'
-  | 'fine-jewelry'
-  | 'everyday-wear'
-  | 'custom-orders'
+  | 'splatter-targets'
+  | 'paper-targets'
+  | 'steel-targets'
+  | 'reactive-targets'
+  | 'target-stands'
+  | 'accessories'
 
 export interface Product {
   id: string

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-label="Splatter bullseye target">
+  <rect width="600" height="800" fill="#0F0F0F"/>
+  <rect x="40" y="60" width="520" height="680" fill="#FAF8F5" rx="6"/>
+  <g transform="translate(300,400)">
+    <circle r="230" fill="none" stroke="#1A1A1A" stroke-width="3"/>
+    <circle r="190" fill="#111"/>
+    <circle r="155" fill="#FAF8F5"/>
+    <circle r="120" fill="#111"/>
+    <circle r="85" fill="#FAF8F5"/>
+    <circle r="52" fill="#E2231A"/>
+    <circle r="20" fill="#111"/>
+    <!-- splatter reveals around impacts -->
+    <g fill="#B6FF1B">
+      <circle cx="-30" cy="-18" r="13"/><circle cx="-46" cy="-30" r="6"/><circle cx="-18" cy="-6" r="5"/>
+      <circle cx="40" cy="22" r="11"/><circle cx="56" cy="34" r="5"/>
+      <circle cx="8" cy="60" r="9"/><circle cx="-60" cy="48" r="7"/>
+    </g>
+    <g fill="#FF7A00">
+      <circle cx="70" cy="-40" r="9"/><circle cx="84" cy="-52" r="4"/>
+      <circle cx="-78" cy="-8" r="7"/><circle cx="22" cy="-70" r="6"/>
+    </g>
+    <g fill="#111"><circle cx="-30" cy="-18" r="3.5"/><circle cx="40" cy="22" r="3.5"/><circle cx="8" cy="60" r="3.5"/><circle cx="70" cy="-40" r="3.5"/><circle cx="-78" cy="-8" r="3.5"/></g>
+  </g>
+  <text x="300" y="712" text-anchor="middle" font-family="Georgia, serif" font-size="26" letter-spacing="6" fill="#0F0F0F">SPLATTER IMPACTS</text>
+</svg>

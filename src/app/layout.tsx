@@ -21,24 +21,24 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Splatter Impacts — Fine Jewelry',
+    default: 'Splatter Impacts — Reactive Shooting Targets',
     template: '%s — Splatter Impacts',
   },
   description:
-    'Handcrafted fine jewelry born from belief. Rings, necklaces, earrings, and bracelets made to become part of your story.',
-  keywords: ['fine jewelry', 'luxury jewelry', 'diamond rings', 'gemstone necklaces', 'handcrafted jewelry'],
+    'Reactive splatter targets, AR500 steel, and range gear that show every hit. See your shots, skip the spotting scope, and make every trip to the range count.',
+  keywords: ['shooting targets', 'splatter targets', 'AR500 steel targets', 'reactive targets', 'paper targets', 'sight-in targets', 'range gear'],
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.splatterimpacts.com',
     siteName: 'Splatter Impacts',
-    title: 'Splatter Impacts — Fine Jewelry',
-    description: 'Handcrafted fine jewelry. Every jewel, a chapter.',
+    title: 'Splatter Impacts — Reactive Shooting Targets',
+    description: 'Reactive splatter targets and AR500 steel that show every hit.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Splatter Impacts — Fine Jewelry',
-    description: 'Handcrafted fine jewelry. Every jewel, a chapter.',
+    title: 'Splatter Impacts — Reactive Shooting Targets',
+    description: 'Reactive splatter targets and AR500 steel that show every hit.',
   },
   robots: {
     index: true,

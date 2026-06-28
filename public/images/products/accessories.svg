@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-label="Target shooting accessories">
+  <rect width="600" height="800" fill="#0F0F0F"/>
+  <rect x="40" y="60" width="520" height="680" fill="#FAF8F5" rx="6"/>
+  <!-- box -->
+  <rect x="150" y="300" width="300" height="220" rx="8" fill="#C8945A" stroke="#8A5E2E" stroke-width="4"/>
+  <path d="M150 300 L300 250 L450 300" fill="none" stroke="#8A5E2E" stroke-width="4"/>
+  <line x1="300" y1="250" x2="300" y2="300" stroke="#8A5E2E" stroke-width="4"/>
+  <!-- paster dots scattered -->
+  <g fill="#E2231A">
+    <circle cx="220" cy="200" r="20"/><circle cx="300" cy="170" r="20"/><circle cx="380" cy="205" r="20"/>
+    <circle cx="255" cy="150" r="14"/><circle cx="345" cy="150" r="14"/>
+  </g>
+  <g fill="#FAF8F5"><circle cx="220" cy="200" r="6"/><circle cx="300" cy="170" r="6"/><circle cx="380" cy="205" r="6"/></g>
+  <!-- label on box -->
+  <rect x="210" y="360" width="180" height="90" rx="4" fill="#FAF8F5"/>
+  <g transform="translate(300,405)"><circle r="26" fill="none" stroke="#111" stroke-width="3"/><circle r="11" fill="#E2231A"/></g>
+  <text x="300" y="700" text-anchor="middle" font-family="Georgia, serif" font-size="24" letter-spacing="5" fill="#0F0F0F">RANGE SUPPLIES</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-label="Sight-in grid target">
+  <rect width="600" height="800" fill="#0F0F0F"/>
+  <rect x="40" y="60" width="520" height="680" fill="#FAF8F5" rx="6"/>
+  <g transform="translate(300,400)">
+    <g stroke="#9BC4E2" stroke-width="1.5">
+      <path d="M-200 -160 H200 M-200 -120 H200 M-200 -80 H200 M-200 -40 H200 M-200 0 H200 M-200 40 H200 M-200 80 H200 M-200 120 H200 M-200 160 H200"/>
+      <path d="M-200 -160 V160 M-160 -160 V160 M-120 -160 V160 M-80 -160 V160 M-40 -160 V160 M0 -160 V160 M40 -160 V160 M80 -160 V160 M120 -160 V160 M160 -160 V160 M200 -160 V160"/>
+    </g>
+    <line x1="-220" y1="0" x2="220" y2="0" stroke="#111" stroke-width="3"/>
+    <line x1="0" y1="-200" x2="0" y2="200" stroke="#111" stroke-width="3"/>
+    <circle r="46" fill="none" stroke="#E2231A" stroke-width="4"/>
+    <circle r="20" fill="#E2231A"/>
+    <g fill="#B6FF1B"><circle cx="6" cy="-8" r="12"/><circle cx="-12" cy="6" r="8"/></g>
+    <g fill="#111"><circle cx="6" cy="-8" r="3"/><circle cx="-12" cy="6" r="3"/></g>
+  </g>
+  <text x="300" y="712" text-anchor="middle" font-family="Georgia, serif" font-size="26" letter-spacing="6" fill="#0F0F0F">SPLATTER IMPACTS</text>
+</svg>

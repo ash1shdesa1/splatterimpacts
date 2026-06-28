@@ -47,6 +47,10 @@ const nextConfig: NextConfig = {
     ]
   },
   images: {
+    // Our product artwork is first-party SVG in /public/images. Allow the
+    // optimizer to serve it (safe because we author every file ourselves).
+    dangerouslyAllowSVG: true,
+    contentDispositionType: 'attachment',
     remotePatterns: [
       {
         protocol: 'https',

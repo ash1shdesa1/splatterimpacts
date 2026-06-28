@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-label="Splatter silhouette target">
+  <rect width="600" height="800" fill="#0F0F0F"/>
+  <rect x="40" y="50" width="520" height="700" fill="#FAF8F5" rx="6"/>
+  <g transform="translate(300,400)">
+    <ellipse cx="0" cy="-180" rx="70" ry="78" fill="#2B2B2B"/>
+    <path d="M-150 60 C-150 -70 -70 -110 0 -110 C70 -110 150 -70 150 60 L150 300 L-150 300 Z" fill="#2B2B2B"/>
+    <circle r="60" cy="-20" fill="none" stroke="#FAF8F5" stroke-width="3" opacity="0.5"/>
+    <circle r="26" cy="-20" fill="#E2231A"/>
+    <g fill="#B6FF1B"><circle cx="-10" cy="-30" r="12"/><circle cx="14" cy="0" r="9"/><circle cx="0" cy="-170" r="11"/><circle cx="-24" cy="-160" r="5"/></g>
+    <g fill="#FF7A00"><circle cx="26" cy="-44" r="7"/><circle cx="-30" cy="10" r="6"/></g>
+    <g fill="#111"><circle cx="-10" cy="-30" r="3"/><circle cx="14" cy="0" r="3"/><circle cx="0" cy="-170" r="3"/></g>
+  </g>
+  <text x="300" y="724" text-anchor="middle" font-family="Georgia, serif" font-size="24" letter-spacing="6" fill="#0F0F0F">SPLATTER IMPACTS</text>
+</svg>
