@@ -1,4 +1,4 @@
-# VERO — Decision Log
+# Splatter Impacts — Decision Log
 
 Key architectural and product decisions, in reverse-chronological order.
 
