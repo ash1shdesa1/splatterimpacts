@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Terms of Service',
-  description: 'Terms of Service for Splatter Impacts Fine Jewelry.',
+  description: 'Terms of Service for Splatter Impacts.',
   robots: { index: false },
 }
 

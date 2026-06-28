@@ -47,7 +47,7 @@ export default function ShopContent() {
     <div className="pt-[72px]">
       {/* Header */}
       <div className="py-16 md:py-20 text-center px-6 border-b border-[#E8E5E0]">
-        <p className="text-[10px] tracking-[0.35em] uppercase text-[#C8A96E] mb-3">The Collection</p>
+        <p className="text-[10px] tracking-[0.35em] uppercase text-[#C8A96E] mb-3">The Lineup</p>
         <h1 className="font-[var(--font-cormorant)] text-4xl md:text-5xl font-light tracking-widest uppercase">
           Shop
         </h1>
@@ -88,7 +88,7 @@ export default function ShopContent() {
 
           <div className="flex items-center gap-4">
             <p className="text-[11px] text-[#9B9892] tracking-wide whitespace-nowrap">
-              {filtered.length} piece{filtered.length !== 1 ? 's' : ''}
+              {filtered.length} product{filtered.length !== 1 ? 's' : ''}
             </p>
             <select
               value={sort}
@@ -117,7 +117,7 @@ export default function ShopContent() {
         {/* Grid */}
         {filtered.length === 0 ? (
           <div className="py-24 text-center">
-            <p className="font-[var(--font-cormorant)] text-2xl font-light text-[#9B9892]">No pieces found</p>
+            <p className="font-[var(--font-cormorant)] text-2xl font-light text-[#9B9892]">No products found</p>
           </div>
         ) : (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">

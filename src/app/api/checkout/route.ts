@@ -10,12 +10,16 @@ interface CartLine {
 // Validate prices server-side against the actual product catalog.
 // Never trust client-supplied prices — this prevents price manipulation attacks.
 function resolveLineItems(lines: CartLine[]) {
+  // Stripe requires absolute image URLs; our product art is stored as local
+  // paths, so resolve them against the site URL.
+  const site = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
   return lines.map((line) => {
     const product = PRODUCTS.find((p) => p.id === line.productId)
     if (!product) throw new Error(`Unknown product: ${line.productId}`)
     if (!product.inStock) throw new Error(`${product.title} is out of stock`)
 
     const qty = Math.min(Math.max(Math.floor(line.quantity), 1), 10)
+    const imageUrl = product.image.startsWith('http') ? product.image : `${site}${product.image}`
 
     return {
       price_data: {
@@ -23,8 +27,8 @@ function resolveLineItems(lines: CartLine[]) {
         unit_amount: Math.round(product.price * 100),
         product_data: {
           name: product.title,
-          images: [product.image],
-          description: `Splatter Impacts Fine Jewelry — ${product.title}`,
+          images: [imageUrl],
+          description: `Splatter Impacts — ${product.title}`,
         },
       },
       quantity: qty,

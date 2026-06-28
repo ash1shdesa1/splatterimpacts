@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Get in touch with Splatter Impacts. We would love to hear from you — whether you have a question about a piece, need help finding the perfect gift, or want to share your story.',
+  description: 'Get in touch with Splatter Impacts — questions about targets, orders, or bulk pricing for ranges, clubs, and matches.',
 }
 
 export default function ContactPage() {
@@ -14,8 +14,8 @@ export default function ContactPage() {
         <h1 className="font-[var(--font-cormorant)] text-5xl font-light tracking-widest uppercase">Contact</h1>
         <span className="gold-line mt-5 mx-auto block" />
         <p className="mt-5 text-[14px] text-[#5C5A56] max-w-[480px] mx-auto leading-relaxed">
-          We would love to hear from you — whether you have a question about a piece, need help
-          finding the perfect gift, or simply want to share your story.
+          Got a question about a target, an order, or bulk pricing for your range or club? We are
+          happy to help — reach out any time.
         </p>
       </div>
 
@@ -36,24 +36,22 @@ export default function ContactPage() {
                 desc: 'Questions about orders, products, or anything else.',
               },
               {
-                title: 'Wholesale Inquiries',
+                title: 'Bulk & Club Orders',
                 detail: 'contact@splatterimpacts.com',
-                /* PLACEHOLDER: Add a dedicated wholesale email */
                 href: 'mailto:contact@splatterimpacts.com',
-                desc: 'Interested in carrying Splatter Impacts in your store? We would love to connect.',
+                desc: 'Volume pricing on splatter packs, steel, and stands for ranges, clubs, and matches.',
+              },
+              {
+                title: 'Dealer Inquiries',
+                detail: 'contact@splatterimpacts.com',
+                href: 'mailto:contact@splatterimpacts.com',
+                desc: 'Interested in carrying Splatter Impacts in your shop? We would love to connect.',
               },
               {
                 title: 'Press & Media',
                 detail: 'contact@splatterimpacts.com',
-                /* PLACEHOLDER: Add a dedicated press email */
                 href: 'mailto:contact@splatterimpacts.com',
-                desc: 'Editorial requests, features, and collaboration opportunities.',
-              },
-              {
-                title: 'Custom Orders',
-                detail: 'Begin your commission',
-                href: '/shop/custom-jewelry-order',
-                desc: 'Commission a one-of-a-kind piece made exclusively for you.',
+                desc: 'Reviews, features, and collaboration opportunities.',
               },
             ].map((item) => (
               <div key={item.title} className="border-l-2 border-[#E8E5E0] pl-6">
@@ -72,12 +70,12 @@ export default function ContactPage() {
           <div className="mt-12">
             <p className="text-[10px] tracking-[0.25em] uppercase text-[#9B9892] mb-4">Follow Us</p>
             <a
-              href="https://www.instagram.com/kingofstudsandsolitaire/"
+              href="https://www.instagram.com/splatterimpacts/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[12px] text-[#5C5A56] hover:text-[#C8A96E] transition-colors tracking-wide"
             >
-              Instagram — @kingofstudsandsolitaire
+              Instagram — @splatterimpacts
             </a>
           </div>
         </div>
@@ -132,8 +130,8 @@ export default function ContactPage() {
               >
                 <option value="general">General Inquiry</option>
                 <option value="order">Order Question</option>
-                <option value="custom">Custom Order</option>
-                <option value="wholesale">Wholesale</option>
+                <option value="bulk">Bulk / Club Order</option>
+                <option value="dealer">Dealer Inquiry</option>
                 <option value="press">Press & Media</option>
               </select>
             </div>

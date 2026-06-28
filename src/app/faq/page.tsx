@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'FAQ',
-  description: 'Answers to the most common questions about Splatter Impacts Fine Jewelry — ordering, shipping, returns, and more.',
+  description: 'Answers about Splatter Impacts targets — ordering, shipping, returns, AR500 steel, splatter targets, setup, and safety.',
 }
 
 const SECTIONS = [
@@ -12,19 +12,19 @@ const SECTIONS = [
     items: [
       {
         q: 'How do I place an order?',
-        a: 'Browse our collection, add items to your cart, and proceed to checkout. We accept all major credit cards securely via Stripe. You will receive an order confirmation email immediately after purchase.',
+        a: 'Browse the shop, add targets to your cart, and check out. We accept all major credit cards securely via Stripe, and you will get an order confirmation email right away.',
       },
       {
         q: 'Can I modify or cancel my order?',
-        a: 'Orders can be modified or cancelled within 1 hour of placement. Please email contact@splatterimpacts.com as soon as possible with your order number. Once an order has been prepared for shipping, we are unable to make changes.',
+        a: 'Orders can be modified or cancelled within 1 hour of placement. Email contact@splatterimpacts.com with your order number as soon as possible. Once an order is prepared for shipping, we cannot make changes.',
       },
       {
-        q: 'Do you offer gift wrapping?',
-        a: 'Every Splatter Impacts order arrives in our signature packaging — a keepsake box with a ribbon, tissue paper, and a care card. This is included at no extra charge and requires no selection at checkout.',
+        q: 'Do you offer bulk or club pricing?',
+        a: 'Yes. We offer volume pricing on splatter packs, steel, and stands for ranges, clubs, and matches. Email contact@splatterimpacts.com with what you run and we will put together a kit.',
       },
       {
         q: 'Do you offer gift cards?',
-        a: 'Gift cards are coming soon. In the meantime, please reach out to us directly at contact@splatterimpacts.com and we will arrange something special.',
+        a: 'Gift cards are coming soon. In the meantime, reach out at contact@splatterimpacts.com and we will arrange something.',
       },
     ],
   },
@@ -33,19 +33,19 @@ const SECTIONS = [
     items: [
       {
         q: 'How long does shipping take?',
-        a: 'Standard shipping takes 5–7 business days. Express shipping (2–3 business days) is available at checkout. Orders are processed within 1–2 business days.',
+        a: 'Standard shipping takes 3–5 business days. Express options are available at checkout. Orders are processed within 1–2 business days.',
       },
       {
         q: 'Is shipping free?',
-        a: 'Complimentary shipping is included on all orders over $200 within the United States. A flat $15 shipping fee applies to orders under $200.',
+        a: 'Free shipping is included on all orders over $99 within the United States. A flat $8 shipping fee applies to orders under $99. Heavy steel orders may carry an oversize surcharge shown at checkout.',
       },
       {
         q: 'Do you ship internationally?',
-        a: 'We currently ship to the United States, Canada, United Kingdom, Australia, France, Germany, Italy, and Spain. International orders typically arrive within 7–14 business days. Duties and taxes are the responsibility of the recipient.',
+        a: 'We currently ship within the United States. International shipping is in the works — sign up for updates or email us about a specific destination.',
       },
       {
         q: 'How do I track my order?',
-        a: 'Once your order ships, you will receive a tracking number via email. You can use this to follow your package through USPS or the relevant carrier.',
+        a: 'Once your order ships, you will receive a tracking number via email so you can follow your package through USPS, UPS, or the relevant carrier.',
       },
     ],
   },
@@ -54,7 +54,7 @@ const SECTIONS = [
     items: [
       {
         q: 'What is your return policy?',
-        a: 'We accept returns within 30 days of delivery. Items must be unworn, undamaged, and in original packaging. Custom and personalized orders are final sale.',
+        a: 'We accept returns within 30 days of delivery. Items must be unused and in original packaging. For safety reasons, steel that has been shot cannot be returned unless it arrived defective.',
       },
       {
         q: 'How do I start a return?',
@@ -62,49 +62,49 @@ const SECTIONS = [
       },
       {
         q: 'When will I receive my refund?',
-        a: 'Refunds are processed within 5–7 business days of receiving your return. The credit will appear on your original payment method.',
+        a: 'Refunds are processed within 5–7 business days of receiving your return. The credit appears on your original payment method.',
       },
       {
-        q: 'Can I exchange for a different size?',
-        a: 'Yes. We offer one complimentary size exchange for rings within 30 days of delivery. Email us with your order number and the size you need.',
-      },
-    ],
-  },
-  {
-    title: 'Products & Materials',
-    items: [
-      {
-        q: 'Are your gemstones natural?',
-        a: 'Yes. All gemstones featured in our collection are natural — not synthetic or lab-created — unless explicitly stated otherwise in the product description.',
-      },
-      {
-        q: 'What metals do you use?',
-        a: 'We work with 14K yellow gold, 14K white gold, 14K rose gold, and sterling silver. Each product listing specifies the metal used.',
-      },
-      {
-        q: 'Do your pieces come with a certificate of authenticity?',
-        a: 'Select fine jewelry pieces include a certificate of authenticity. This is noted in the product details where applicable.',
-      },
-      {
-        q: 'Are your pieces hypoallergenic?',
-        a: 'Our 14K gold pieces are generally well-tolerated by sensitive skin. Sterling silver pieces are made with .925 silver. If you have a known metal allergy, please contact us before ordering.',
+        q: 'What if my target arrives damaged?',
+        a: 'Steel ships heavy and occasionally takes a knock in transit. If anything arrives damaged, send us a photo within 7 days and we will make it right.',
       },
     ],
   },
   {
-    title: 'Custom Orders',
+    title: 'Targets & Materials',
     items: [
       {
-        q: 'Can I commission a custom piece?',
-        a: 'Absolutely. Our custom order service lets you work directly with our designer to create something made only for you. A consultation deposit begins the process — visit our Custom Orders page to get started.',
+        q: 'Is your steel real AR500?',
+        a: 'Yes. Our steel targets are genuine through-hardened AR500 plate (roughly 500 Brinell), laser-cut and edge-deburred. Each listing notes the thickness and size.',
       },
       {
-        q: 'How long does a custom order take?',
-        a: 'Custom pieces typically require 4–8 weeks from design approval to delivery, depending on complexity and material sourcing.',
+        q: 'What calibers can I shoot at your steel?',
+        a: 'Standard-velocity pistol and rifle at the recommended minimum distances. Do not use armor-piercing, steel-core, or green-tip ammunition — it damages the face and shortens target life.',
       },
       {
-        q: 'Are custom orders refundable?',
-        a: 'Custom and personalized orders are final sale. The deposit is non-refundable once design work has begun.',
+        q: 'How do the splatter targets work?',
+        a: 'A bright reactive coating bursts into a high-visibility ring around each hit, so you can call your shots from the bench without a spotting scope or a walk downrange.',
+      },
+      {
+        q: 'How many rounds will steel last?',
+        a: 'With proper ammo and distance, AR500 plate lasts for thousands of rounds. Shallow dimpling is normal; retire any plate that develops sharp craters.',
+      },
+    ],
+  },
+  {
+    title: 'Setup & Safety',
+    items: [
+      {
+        q: 'Do I need a special stand?',
+        a: 'Paper and splatter targets staple to a backer on any of our stands. Steel hangs from a stand or T-post so it can swing — check the product page for what hardware is included.',
+      },
+      {
+        q: 'What is the minimum safe distance for steel?',
+        a: 'As a general guide, 10+ yards for pistol and 100+ yards for rifle, but always follow the rating on the product and your range rules. Eye and ear protection are a must.',
+      },
+      {
+        q: 'Can I use these at an indoor range?',
+        a: 'Paper and splatter targets work anywhere paper is allowed. Always confirm your range permits steel and reactive targets before bringing them.',
       },
     ],
   },

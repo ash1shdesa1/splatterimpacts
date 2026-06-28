@@ -3,7 +3,7 @@ import ShopContent from './ShopContent'
 
 export const metadata = {
   title: 'Shop',
-  description: 'Explore Splatter Impacts Fine Jewelry — rings, necklaces, earrings, bracelets, and bespoke pieces.',
+  description: 'Shop Splatter Impacts — reactive splatter targets, AR500 steel, reactive steel, stands, and range accessories.',
 }
 
 export default function ShopPage() {

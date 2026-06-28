@@ -4,23 +4,17 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Our Story',
-  description: 'The story of Splatter Impacts — jewelry born from belief, beauty shaped by purpose, pieces made to be lived in.',
+  description: 'The story of Splatter Impacts — reactive targets and AR500 steel built by shooters who got tired of walking downrange.',
 }
 
 export default function AboutPage() {
   return (
     <div className="pt-[72px]">
       {/* Hero */}
-      <div className="relative h-[55vh] min-h-[380px] overflow-hidden">
-        <Image
-          src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=2000&q=90"
-          alt="The story of Splatter Impacts"
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-black/50" />
+      <div className="relative h-[55vh] min-h-[380px] overflow-hidden bg-[#0F0F0F]">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] to-[#000]" />
+        <div className="absolute top-[20%] left-[16%] w-44 h-44 rounded-full bg-[#B6FF1B]/10 blur-3xl" />
+        <div className="absolute bottom-[18%] right-[16%] w-52 h-52 rounded-full bg-[#FF7A00]/10 blur-3xl" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
           <p className="text-[10px] tracking-[0.35em] uppercase opacity-70 mb-4">The Story</p>
           <h1 className="font-[var(--font-cormorant)] text-5xl md:text-6xl font-light tracking-widest uppercase">
@@ -30,11 +24,11 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Origin */}
+      {/* Quote */}
       <section className="py-24 px-6 md:px-10">
         <div className="max-w-[800px] mx-auto text-center">
           <p className="font-[var(--font-cormorant)] text-xl md:text-2xl font-light italic text-[#5C5A56] leading-[1.8]">
-            &ldquo;Jewelry born from belief. Beauty shaped by purpose. Pieces made to be lived in.&rdquo;
+            &ldquo;See every hit. Skip the walk. Make every round count.&rdquo;
           </p>
         </div>
       </section>
@@ -42,43 +36,39 @@ export default function AboutPage() {
       {/* Story */}
       <section className="pb-24 px-6 md:px-10">
         <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-16 md:gap-24 items-start">
-          {/* Text */}
           <div>
             <p className="text-[10px] tracking-[0.35em] uppercase text-[#C8A96E] mb-5">Our Beginning</p>
             <h2 className="font-[var(--font-cormorant)] text-4xl font-light tracking-wide leading-tight mb-8">
-              A dreamer with an eye for design
+              Built by shooters, for shooters
             </h2>
 
             <div className="space-y-5 text-[14px] text-[#5C5A56] leading-[1.95]">
               <p>
-                Splatter Impacts was born from a simple belief: that jewelry should be more than an accessory.
-                It should be a reflection of a person's story — a piece that captures moments and
-                transforms them into timeless treasures.
+                Splatter Impacts started at the range, with one shared frustration: spending half of
+                every session walking downrange just to see where rounds landed. There had to be a
+                better way to train.
               </p>
               <p>
-                The founder is a dreamer with an eye for design. She drew upon her heritage and
-                countless sketches to create pieces that blended modern lines with classic grace —
-                rings that felt like poetry, necklaces that promised remembrance, earrings that
-                framed a smile.
+                So we built around a simple idea — targets that tell you the truth instantly. Reactive
+                splatter coatings that burst into bright color on contact. AR500 steel that rings loud
+                and clear. Stands and hardware that take a beating and keep working.
               </p>
               <p>
-                Each piece is handcrafted with precision, a dance between gold, diamonds, and a
-                designer's intuition. At Splatter Impacts, we work quietly, patiently, ensuring every jewel
-                leaves the workshop imbued with emotion and craftsmanship.
+                Every product we sell has to earn its place in our own range bags first. If it does not
+                hold up to a hard day of shooting, it does not make the lineup.
               </p>
               <p>
-                We are not making jewelry for display cases. We are making pieces meant to accompany
-                moments — a quiet morning, an evening of celebration, a lifetime of memories.
+                We are not here to sell flimsy paper that falls apart in the wind. We are here to help
+                you shoot more, walk less, and actually see your progress.
               </p>
             </div>
           </div>
 
-          {/* Image */}
           <div className="space-y-4">
-            <div className="relative aspect-[4/5] overflow-hidden img-zoom-wrapper">
+            <div className="relative aspect-[4/5] overflow-hidden img-zoom-wrapper bg-[#F5F3F0]">
               <Image
-                src="https://images.unsplash.com/photo-1563291074-2bf8677ac0e5?auto=format&fit=crop&w=800&q=90"
-                alt="Splatter Impacts design process"
+                src="/images/products/splatter-bullseye.svg"
+                alt="Reactive splatter target"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -91,10 +81,10 @@ export default function AboutPage() {
       {/* Purpose */}
       <section className="py-20 px-6 md:px-10 bg-[#F5F3F0]">
         <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-16 items-center">
-          <div className="relative aspect-[4/5] overflow-hidden img-zoom-wrapper">
+          <div className="relative aspect-[4/5] overflow-hidden img-zoom-wrapper bg-[#15171A]">
             <Image
-              src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=90"
-              alt="Splatter Impacts diamond jewelry"
+              src="/images/products/steel-gong.svg"
+              alt="AR500 steel gong"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -104,23 +94,20 @@ export default function AboutPage() {
           <div>
             <p className="text-[10px] tracking-[0.35em] uppercase text-[#C8A96E] mb-5">Our Purpose</p>
             <h2 className="font-[var(--font-cormorant)] text-4xl font-light tracking-wide leading-tight mb-8">
-              Finding yourself in a piece of jewelry
+              Better feedback, better shooting
             </h2>
             <div className="space-y-5 text-[14px] text-[#5C5A56] leading-[1.95]">
               <p>
-                People come to Splatter Impacts to find more than jewelry; they come to find themselves. A woman
-                searching for a gift for her daughter, a man seeking the perfect symbol of a promise,
-                a couple choosing rings that would define their union — every piece becomes part of a
-                larger story.
+                Shooters come to Splatter Impacts to get more out of every trip to the range — the new
+                shooter learning trigger control on a reactive dot, the competitor running steel on the
+                clock, the family making memories plinking on a weekend.
               </p>
               <p>
-                Today, Splatter Impacts shines not just for its beauty, but for its belief that true elegance is
-                timeless, quiet, and deeply personal. It is a brand for those who value craftsmanship,
-                who seek beauty with a purpose, and who understand that the best designs are those that
-                connect hearts across moments and generations.
+                Instant feedback is what makes practice stick. When you can see exactly where a shot
+                landed without leaving the line, you fix mistakes faster and build real skill.
               </p>
               <p className="font-[var(--font-cormorant)] text-lg italic text-[#0F0F0F]">
-                At Splatter Impacts, every jewel is a chapter. And every chapter is an invitation to tell your story.
+                Every round tells a story. We just make it easy to read.
               </p>
             </div>
           </div>
@@ -139,16 +126,16 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-10 text-center">
             {[
               {
-                title: 'Authenticity',
-                desc: 'Every stone is natural, every metal is genuine. We never compromise on the integrity of our materials, because we never compromise on the integrity of your story.',
+                title: 'Durability',
+                desc: 'Genuine AR500 plate and heavyweight materials. We build targets to outlast the season, not the afternoon.',
               },
               {
-                title: 'Craftsmanship',
-                desc: 'Each piece is hand-finished by artisans who understand that jewelry at its finest is a form of art — patient, precise, and profound.',
+                title: 'Honesty',
+                desc: 'Real specs, real distances, real safety guidance. We tell you exactly what a target is rated for — no marketing fluff.',
               },
               {
-                title: 'Legacy',
-                desc: 'We design for the long arc of a life. Every Splatter Impacts piece is made to be passed down, cherished across generations, and grow more meaningful with time.',
+                title: 'Value',
+                desc: 'Quality gear at a fair price, with bulk pricing for ranges and clubs. More rounds downrange, less money spent.',
               },
             ].map((v) => (
               <div key={v.title} className="space-y-5">
@@ -165,15 +152,15 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section className="py-16 px-6 md:px-10 bg-[#0F0F0F] text-white text-center">
-        <p className="text-[10px] tracking-[0.35em] uppercase text-[#C8A96E] mb-4">Begin Your Story</p>
+        <p className="text-[10px] tracking-[0.35em] uppercase text-[#C8A96E] mb-4">Get to the Range</p>
         <h2 className="font-[var(--font-cormorant)] text-4xl font-light tracking-widest uppercase mb-6">
-          Find Your Chapter
+          Gear Up
         </h2>
         <Link
           href="/shop"
           className="inline-flex items-center gap-3 border border-white/60 text-white text-[11px] tracking-[0.25em] uppercase px-10 py-4 hover:bg-white hover:text-[#0F0F0F] transition-all duration-300"
         >
-          Explore the Collection
+          Shop the Lineup
         </Link>
       </section>
     </div>

@@ -134,7 +134,7 @@ export default async function ProductPage({ params }: Props) {
             {/* Shipping */}
             <div className="border-t border-[#E8E5E0] pt-6 mt-6 space-y-3">
               {[
-                { icon: '📦', text: 'Complimentary shipping on all orders over $200' },
+                { icon: '📦', text: 'Free shipping on all orders over $99' },
                 { icon: '↩', text: 'Free returns within 30 days' },
                 { icon: '🔒', text: 'Secure checkout via Stripe' },
                 { icon: '💬', text: 'Questions? Email contact@splatterimpacts.com' },

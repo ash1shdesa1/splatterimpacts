@@ -2,113 +2,92 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Jewelry Care',
-  description: 'How to care for your Splatter Impacts fine jewelry so it lasts a lifetime.',
+  title: 'Range & Care Guide',
+  description: 'How to set up, shoot, and care for your Splatter Impacts targets safely — steel, paper, splatter, and stands.',
 }
 
 export default function CarePage() {
   return (
     <div className="pt-[72px]">
       <div className="py-20 text-center px-6 border-b border-[#E8E5E0]">
-        <p className="text-[10px] tracking-[0.35em] uppercase text-[#C8A96E] mb-3">Care Guide</p>
+        <p className="text-[10px] tracking-[0.35em] uppercase text-[#C8A96E] mb-3">Range Guide</p>
         <h1 className="font-[var(--font-cormorant)] text-5xl font-light tracking-widest uppercase">
-          Caring for Your Jewelry
+          Range &amp; Care Guide
         </h1>
         <span className="gold-line mt-5 mx-auto block" />
         <p className="mt-5 text-[14px] text-[#5C5A56] max-w-[440px] mx-auto leading-relaxed">
-          The pieces that last lifetimes are the ones that are loved and cared for.
-          A little attention goes a long way.
+          Set up safely, shoot smart, and your steel will last for years. Always follow your range
+          rules and the four firearm safety rules first.
         </p>
       </div>
 
       <div className="max-w-[760px] mx-auto px-6 md:px-10 py-20 space-y-14">
         {[
           {
-            title: 'Daily Wear',
+            title: 'Safety First',
             items: [
               {
-                q: 'Put jewelry on last',
-                a: 'Apply perfume, lotion, hairspray, and makeup before putting on your jewelry. Chemicals in these products can dull metals and damage gemstones over time.',
+                q: 'Mind your minimum distances',
+                a: 'Shoot steel at the manufacturer-recommended minimum distances: generally 10+ yards for pistol and 100+ yards for rifle. Closer distances and certain high-velocity loads increase splatter-back and ricochet risk.',
               },
               {
-                q: 'Remove before water',
-                a: 'Take off your jewelry before showering, swimming, or washing dishes. Prolonged exposure to water — especially chlorinated or salt water — can affect the finish and loosen settings.',
+                q: 'Wear eye and ear protection',
+                a: 'Always wear impact-rated eye protection and hearing protection. Fragments and jacket material can come back toward the firing line, especially with steel.',
               },
               {
-                q: 'Remove during physical activity',
-                a: 'Remove pieces before exercise, gardening, or any activity where your jewelry might be knocked against hard surfaces. Impact can loosen prongs and scratch metals.',
+                q: 'Hang steel correctly',
+                a: 'Steel should hang freely at a slight downward angle so impacts deflect toward the ground. Never shoot steel that is bolted flat, pitted, cratered, or has a damaged face.',
               },
             ],
           },
           {
-            title: 'Cleaning',
+            title: 'Steel Target Care',
             items: [
               {
-                q: 'Gold jewelry',
-                a: 'Soak in warm water with a few drops of mild dish soap for 10–15 minutes. Gently scrub with a soft-bristle toothbrush. Rinse thoroughly and pat dry with a lint-free cloth. Avoid ultrasonic cleaners for pieces with fragile or porous stones.',
+                q: 'Use the right caliber',
+                a: 'Our AR500 plate is rated for standard velocity pistol and rifle. Avoid armor-piercing, steel-core, and green-tip ammunition — these damage the face and shorten target life dramatically.',
               },
               {
-                q: 'Sterling silver',
-                a: 'Polish with a silver polishing cloth to remove tarnish. For deeper cleaning, use warm soapy water and a soft brush, then dry immediately and thoroughly. Tarnish is natural — it can always be polished away.',
+                q: 'Retire pitted plates',
+                a: 'Hardened steel will eventually show shallow dimples — that is normal. Stop using any plate that develops sharp craters or edges, as a cratered face can deflect fragments unpredictably.',
               },
               {
-                q: 'Gemstones',
-                a: 'Most gemstones can be gently cleaned with warm water and mild soap. Avoid steam cleaners and ultrasonic cleaners for softer stones (opal, pearl, turquoise, emerald). When in doubt, a soft damp cloth is always safe.',
-              },
-              {
-                q: 'Diamonds',
-                a: 'Diamonds attract oils and grease, which can cloud their brilliance. Clean regularly with warm soapy water and a soft toothbrush. A brief soak helps loosen buildup around the setting.',
+                q: 'Store it dry',
+                a: 'Wipe steel down and store it out of standing water. Surface rust is cosmetic and does not affect performance — knock it off with a wire brush if you like.',
               },
             ],
           },
           {
-            title: 'Storage',
+            title: 'Paper & Splatter Targets',
             items: [
               {
-                q: 'Store pieces separately',
-                a: 'Jewelry should be stored individually to prevent scratching. Use the pouch or box your Splatter Impacts piece arrived in, or a fabric-lined jewelry box with separate compartments.',
+                q: 'Back them properly',
+                a: 'Staple paper and splatter targets flat to a backer (cardboard or corrugated) on a stand. A flat, fully supported target tears less and shows cleaner hits.',
               },
               {
-                q: 'Keep away from sunlight and heat',
-                a: 'Direct sunlight and heat can fade certain gemstones and affect the finish of metals. Store in a cool, dry place away from windows.',
+                q: 'Re-use with pasters',
+                a: 'Cover hits with target pasters to keep a single target in service through a long session — handy for drills and load development.',
               },
               {
-                q: 'Anti-tarnish strips',
-                a: 'For sterling silver, placing an anti-tarnish strip in your storage drawer or box will slow oxidation significantly.',
+                q: 'Keep them dry',
+                a: 'Store paper and splatter packs flat in a dry place. Damp paper warps and the reactive coating performs best when the sheet lies flat.',
               },
             ],
           },
           {
-            title: 'What to Avoid',
+            title: 'Stands & Hardware',
             items: [
               {
-                q: 'Harsh chemicals',
-                a: 'Keep jewelry away from bleach, chlorine, acetone (nail polish remover), and household cleaning products. These can permanently damage metals and dissolve certain gemstone treatments.',
+                q: 'Check your hardware',
+                a: 'Inspect chains, hooks, and bolts before each session. Replace anything that is badly worn — a dropped plate is a hassle and a hazard.',
               },
               {
-                q: 'Abrasives',
-                a: 'Never use toothpaste, baking soda paste, or abrasive cloths to clean jewelry. These scratch metal surfaces and can damage softer stones.',
+                q: 'Furring strips are consumable',
+                a: 'The 1x2 strips that hold paper backers will get shot up over time. Keep spares on hand and swap them when they weaken.',
               },
               {
-                q: 'Sleeping in jewelry',
-                a: 'Sleeping in fine jewelry — especially chains and earrings — puts unnecessary stress on clasps, settings, and links. We recommend removing pieces before bed.',
-              },
-            ],
-          },
-          {
-            title: 'Professional Care',
-            items: [
-              {
-                q: 'Annual check-ups',
-                a: 'We recommend having your fine jewelry professionally inspected once a year. A jeweler can check for loose prongs, worn clasps, and subtle damage before a stone is lost.',
-              },
-              {
-                q: 'Replating',
-                a: 'White gold pieces are rhodium-plated to enhance their bright, white appearance. With regular wear, this plating gradually wears away — a normal process. Replating every 1–2 years restores the original look.',
-              },
-              {
-                q: 'Repairs',
-                a: 'If a clasp breaks, a stone comes loose, or a prong bends, stop wearing the piece immediately and bring it to a qualified jeweler. Most repairs are straightforward when caught early.',
+                q: 'Stake reactive targets',
+                a: 'Spinners and auto-reset targets work best staked firmly into the ground or set on level, solid footing so they reset cleanly.',
               },
             ],
           },
@@ -130,11 +109,11 @@ export default function CarePage() {
 
         <div className="border-t border-[#E8E5E0] pt-10">
           <p className="text-[13px] text-[#9B9892]">
-            Questions about a specific piece?{' '}
+            Questions about a specific target or setup?{' '}
             <Link href="/contact" className="text-[#C8A96E] hover:underline">
               Get in touch
             </Link>{' '}
-            and we'll advise you directly.
+            and we&apos;ll point you the right way.
           </p>
         </div>
       </div>
