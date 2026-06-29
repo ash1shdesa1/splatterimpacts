@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://www.splatterimpacts.com',
+    url: 'https://www.splatterimpact.com',
     siteName: 'Splatter Impacts',
     title: 'Splatter Impacts — Reactive Shooting Targets',
     description: 'Reactive splatter targets and AR500 steel that show every hit.',

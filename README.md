@@ -1,6 +1,6 @@
 # Splatter Impacts — Reactive Shooting Targets E-Commerce
 
-Storefront for **splatterimpacts.com** — reactive splatter targets, AR500 steel, reactive steel, stands, and range accessories. Built with Next.js 16 + React 19, Shopify checkout, Zustand cart, and Tailwind CSS. Deployed on Netlify.
+Storefront for **splatterimpact.com** — reactive splatter targets, AR500 steel, reactive steel, stands, and range accessories. Built with Next.js 16 + React 19, Shopify checkout, Zustand cart, and Tailwind CSS. Deployed on Netlify.
 
 ---
 
@@ -131,13 +131,13 @@ Config in `netlify.toml` is ready. Steps to go live:
 2. Connect repo in Netlify → New site from Git
 3. Add env vars in Netlify dashboard (Site Settings → Environment Variables):
    ```
-   NEXT_PUBLIC_SITE_URL=https://www.splatterimpacts.com
+   NEXT_PUBLIC_SITE_URL=https://www.splatterimpact.com
    SHOPIFY_STORE_DOMAIN=your-store.myshopify.com
    SHOPIFY_STOREFRONT_ACCESS_TOKEN=...
    SHOPIFY_WEBHOOK_SECRET=...
    ```
-4. Connect domain `splatterimpacts.com` in Netlify → Domain Management (Netlify shows the `[your-site].netlify.app` target)
-5. **DNS is hosted at GoDaddy.** Manage records in GoDaddy → **My Products → splatterimpacts.com → Manage DNS**:
+4. Connect domain `splatterimpact.com` in Netlify → Domain Management (Netlify shows the `[your-site].netlify.app` target)
+5. **DNS is hosted at GoDaddy.** Manage records in GoDaddy → **My Products → splatterimpact.com → Manage DNS**:
 
    | Type  | Name | Value                       | TTL    |
    |-------|------|-----------------------------|--------|
@@ -146,7 +146,7 @@ Config in `netlify.toml` is ready. Steps to go live:
 
    - Delete GoDaddy's default parked `@` A record and `www` CNAME so they don't conflict.
    - The apex uses Netlify's A record `75.2.60.5` (GoDaddy can't CNAME the apex).
-   - Verify with `dig splatterimpacts.com +short`.
+   - Verify with `dig splatterimpact.com +short`.
 
 ---
 

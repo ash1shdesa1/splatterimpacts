@@ -16,15 +16,15 @@ const SECTIONS = [
       },
       {
         q: 'Can I modify or cancel my order?',
-        a: 'Orders can be modified or cancelled within 1 hour of placement. Email contact@splatterimpacts.com with your order number as soon as possible. Once an order is prepared for shipping, we cannot make changes.',
+        a: 'Orders can be modified or cancelled within 1 hour of placement. Email contact@splatterimpact.com with your order number as soon as possible. Once an order is prepared for shipping, we cannot make changes.',
       },
       {
         q: 'Do you offer bulk or club pricing?',
-        a: 'Yes. We offer volume pricing on splatter packs, steel, and stands for ranges, clubs, and matches. Email contact@splatterimpacts.com with what you run and we will put together a kit.',
+        a: 'Yes. We offer volume pricing on splatter packs, steel, and stands for ranges, clubs, and matches. Email contact@splatterimpact.com with what you run and we will put together a kit.',
       },
       {
         q: 'Do you offer gift cards?',
-        a: 'Gift cards are coming soon. In the meantime, reach out at contact@splatterimpacts.com and we will arrange something.',
+        a: 'Gift cards are coming soon. In the meantime, reach out at contact@splatterimpact.com and we will arrange something.',
       },
     ],
   },
@@ -58,7 +58,7 @@ const SECTIONS = [
       },
       {
         q: 'How do I start a return?',
-        a: 'Email contact@splatterimpacts.com with your order number and reason for return. We will send a prepaid return label within one business day.',
+        a: 'Email contact@splatterimpact.com with your order number and reason for return. We will send a prepaid return label within one business day.',
       },
       {
         q: 'When will I receive my refund?',
@@ -148,8 +148,8 @@ export default function FAQPage() {
               Contact us
             </Link>{' '}
             or email{' '}
-            <a href="mailto:contact@splatterimpacts.com" className="text-[#FF6A00] hover:underline">
-              contact@splatterimpacts.com
+            <a href="mailto:contact@splatterimpact.com" className="text-[#FF6A00] hover:underline">
+              contact@splatterimpact.com
             </a>
           </p>
         </div>

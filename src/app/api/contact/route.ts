@@ -46,8 +46,8 @@ export async function POST(req: NextRequest) {
     // import { Resend } from 'resend'
     // const resend = new Resend(process.env.RESEND_API_KEY)
     // await resend.emails.send({
-    //   from: process.env.EMAIL_FROM!,          // e.g. 'Splatter Impacts <noreply@splatterimpacts.com>'
-    //   to: process.env.EMAIL_TO!,              // e.g. 'contact@splatterimpacts.com'
+    //   from: process.env.EMAIL_FROM!,          // e.g. 'Splatter Impacts <noreply@splatterimpact.com>'
+    //   to: process.env.EMAIL_TO!,              // e.g. 'contact@splatterimpact.com'
     //   replyTo: email,
     //   subject: `Splatter Impacts Contact — ${subject || 'General Inquiry'}`,
     //   text: `From: ${firstName} ${lastName} <${email}>\n\n${message}`,

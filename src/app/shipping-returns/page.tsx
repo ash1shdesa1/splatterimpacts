@@ -33,7 +33,7 @@ export default function ShippingReturnsPage() {
             content: [
               { q: '30-Day Returns', a: 'We accept returns within 30 days of delivery. Items must be unworn, in original condition, and in original packaging.' },
               { q: 'Free Return Shipping', a: 'Returns are complimentary. A prepaid return label will be emailed to you upon initiating your return.' },
-              { q: 'How to Initiate a Return', a: 'Email contact@splatterimpacts.com with your order number and reason for return. We will respond within 1 business day.' },
+              { q: 'How to Initiate a Return', a: 'Email contact@splatterimpact.com with your order number and reason for return. We will respond within 1 business day.' },
               { q: 'Refunds', a: 'Refunds are processed within 5–7 business days of receiving your return. Credit will be applied to your original payment method.' },
               { q: 'Final Sale Items', a: 'For safety reasons, steel that has been shot is final sale and cannot be returned unless it arrived defective.' },
             ],
@@ -65,9 +65,9 @@ export default function ShippingReturnsPage() {
           <p className="text-[13px] text-[#8A9099]">
             Questions? We are here to help.{' '}
             <Link href="/contact" className="text-[#FF6A00] hover:underline">Contact us</Link> or email{' '}
-            <a href="mailto:contact@splatterimpacts.com" className="text-[#FF6A00] hover:underline">
+            <a href="mailto:contact@splatterimpact.com" className="text-[#FF6A00] hover:underline">
               {/* PLACEHOLDER: Update this email address */}
-              contact@splatterimpacts.com
+              contact@splatterimpact.com
             </a>
           </p>
         </div>

@@ -24,7 +24,7 @@ export default function TermsPage() {
         {[
           {
             title: '1. Agreement to Terms',
-            body: 'By accessing or purchasing from splatterimpacts.com ("Site"), you agree to be bound by these Terms of Service. If you do not agree, please do not use the Site.',
+            body: 'By accessing or purchasing from splatterimpact.com ("Site"), you agree to be bound by these Terms of Service. If you do not agree, please do not use the Site.',
           },
           {
             title: '2. Products',
@@ -80,8 +80,8 @@ export default function TermsPage() {
             ) : (
               <p className="text-[13px] text-[#474C53] leading-relaxed">
                 For questions about these Terms, please contact us at{' '}
-                <a href="mailto:contact@splatterimpacts.com" className="text-[#FF6A00] hover:underline">
-                  contact@splatterimpacts.com
+                <a href="mailto:contact@splatterimpact.com" className="text-[#FF6A00] hover:underline">
+                  contact@splatterimpact.com
                 </a>{' '}
                 or visit our{' '}
                 <Link href="/contact" className="text-[#FF6A00] hover:underline">

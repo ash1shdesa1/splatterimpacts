@@ -81,7 +81,7 @@ the free-shipping threshold dropped to $99.
 ## 2026-06-21 — Rebranded from VERO to Splatter Impacts
 
 **Decision:** Renamed the brand throughout — UI/metadata, domain
-(`splatterimpacts.com`), localStorage cart key (`splatterimpacts-cart`), and CSS
+(`splatterimpact.com`), localStorage cart key (`splatterimpacts-cart`), and CSS
 design tokens — and wired the repo to `github.com/ash1shdesa1/splatterimpacts`.
 
 ---
@@ -114,7 +114,7 @@ design tokens — and wired the repo to `github.com/ash1shdesa1/splatterimpacts`
 
 ## 2026-06-20 — Bare domain redirects to www
 
-**Decision:** `splatterimpacts.com` permanently redirects (301) to `www.splatterimpacts.com` via Netlify redirect rule.
+**Decision:** `splatterimpact.com` permanently redirects (301) to `www.splatterimpact.com` via Netlify redirect rule.
 
 **Why:** Canonical URL consistency for SEO and branding. HSTS preload also works better with a single canonical origin.
 

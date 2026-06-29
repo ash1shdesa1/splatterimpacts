@@ -30,27 +30,27 @@ export default function ContactPage() {
             {[
               {
                 title: 'Customer Service',
-                detail: 'contact@splatterimpacts.com',
+                detail: 'contact@splatterimpact.com',
                 /* PLACEHOLDER: Update this email address */
-                href: 'mailto:contact@splatterimpacts.com',
+                href: 'mailto:contact@splatterimpact.com',
                 desc: 'Questions about orders, products, or anything else.',
               },
               {
                 title: 'Bulk & Club Orders',
-                detail: 'contact@splatterimpacts.com',
-                href: 'mailto:contact@splatterimpacts.com',
+                detail: 'contact@splatterimpact.com',
+                href: 'mailto:contact@splatterimpact.com',
                 desc: 'Volume pricing on splatter packs, steel, and stands for ranges, clubs, and matches.',
               },
               {
                 title: 'Dealer Inquiries',
-                detail: 'contact@splatterimpacts.com',
-                href: 'mailto:contact@splatterimpacts.com',
+                detail: 'contact@splatterimpact.com',
+                href: 'mailto:contact@splatterimpact.com',
                 desc: 'Interested in carrying Splatter Impacts in your shop? We would love to connect.',
               },
               {
                 title: 'Press & Media',
-                detail: 'contact@splatterimpacts.com',
-                href: 'mailto:contact@splatterimpacts.com',
+                detail: 'contact@splatterimpact.com',
+                href: 'mailto:contact@splatterimpact.com',
                 desc: 'Reviews, features, and collaboration opportunities.',
               },
             ].map((item) => (

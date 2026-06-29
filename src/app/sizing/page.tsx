@@ -116,8 +116,8 @@ export default function SizingPage() {
 
         <p className="text-[13px] text-[#8A9099] text-center">
           Still unsure what to run? Email us at{' '}
-          <a href="mailto:contact@splatterimpacts.com" className="text-[#FF6A00] hover:underline">
-            contact@splatterimpacts.com
+          <a href="mailto:contact@splatterimpact.com" className="text-[#FF6A00] hover:underline">
+            contact@splatterimpact.com
           </a>{' '}
           and we will help you dial it in.
         </p>

@@ -92,11 +92,11 @@ export default function Footer() {
           </ul>
           <div className="mt-6">
             <a
-              href="mailto:contact@splatterimpacts.com"
+              href="mailto:contact@splatterimpact.com"
               className="text-[12px] text-white/50 hover:text-[#FF6A00] transition-colors"
             >
               {/* PLACEHOLDER: Update this email address */}
-              contact@splatterimpacts.com
+              contact@splatterimpact.com
             </a>
           </div>
         </div>

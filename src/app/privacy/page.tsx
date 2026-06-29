@@ -48,7 +48,7 @@ export default function PrivacyPage() {
           },
           {
             title: '7. Your Rights',
-            body: 'Depending on your location, you may have the right to access, correct, or delete the personal information we hold about you. You may also have the right to opt out of marketing communications at any time using the unsubscribe link in any email we send. To exercise any of these rights, contact us at contact@splatterimpacts.com.',
+            body: 'Depending on your location, you may have the right to access, correct, or delete the personal information we hold about you. You may also have the right to opt out of marketing communications at any time using the unsubscribe link in any email we send. To exercise any of these rights, contact us at contact@splatterimpact.com.',
           },
           {
             title: '8. Children\'s Privacy',
@@ -76,8 +76,8 @@ export default function PrivacyPage() {
             ) : (
               <p className="text-[13px] text-[#474C53] leading-relaxed">
                 For questions or requests related to your personal data, contact us at{' '}
-                <a href="mailto:contact@splatterimpacts.com" className="text-[#FF6A00] hover:underline">
-                  contact@splatterimpacts.com
+                <a href="mailto:contact@splatterimpact.com" className="text-[#FF6A00] hover:underline">
+                  contact@splatterimpact.com
                 </a>{' '}
                 or visit our{' '}
                 <Link href="/contact" className="text-[#FF6A00] hover:underline">

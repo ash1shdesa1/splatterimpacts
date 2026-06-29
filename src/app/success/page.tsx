@@ -28,9 +28,9 @@ export default function SuccessPage() {
         </p>
         <p className="text-[14px] text-[#474C53] leading-[1.9] mb-10">
           If you have any questions, reach us at{' '}
-          <a href="mailto:contact@splatterimpacts.com" className="text-[#FF6A00] hover:underline">
+          <a href="mailto:contact@splatterimpact.com" className="text-[#FF6A00] hover:underline">
             {/* PLACEHOLDER: Update this email address */}
-            contact@splatterimpacts.com
+            contact@splatterimpact.com
           </a>
         </p>
 

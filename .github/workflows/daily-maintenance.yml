@@ -57,7 +57,7 @@ jobs:
         with:
           node-version: '24'
       - name: Check live site links
-        run: node scripts/check-links.mjs https://splatterimpacts.com
+        run: node scripts/check-links.mjs https://splatterimpact.com
 
   # ── 4. Netlify build health ──────────────────────────────────────────
   netlify:
